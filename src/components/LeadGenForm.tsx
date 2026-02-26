@@ -8,14 +8,15 @@ const LeadGenForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    website: "",
     whatsapp: "",
+    needsSeo: "",
+    website: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
@@ -32,7 +33,10 @@ const LeadGenForm = () => {
           "Content-Type": "application/json",
           "apikey": supabaseKey,
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          pageUrl: window.location.href,
+        }),
       });
       const data = await res.json();
       if (!res.ok || data.error) throw new Error(data.error || "Send failed");
@@ -54,7 +58,7 @@ const LeadGenForm = () => {
           Thanks! We'll review your details and get back to you within 24 hours.
         </p>
         <button
-          onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", website: "", whatsapp: "" }); }}
+          onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", whatsapp: "", needsSeo: "", website: "" }); }}
           className="mt-4 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
         >
           Submit another request
@@ -96,20 +100,6 @@ const LeadGenForm = () => {
           />
         </div>
         <div>
-          <Label htmlFor="website" className="text-sm font-medium text-heading">Website URL</Label>
-          <Input
-            id="website"
-            name="website"
-            type="text"
-            placeholder="yourwebsite.com"
-            required
-            maxLength={500}
-            value={formData.website}
-            onChange={handleChange}
-            className="mt-1"
-          />
-        </div>
-        <div>
           <Label htmlFor="whatsapp" className="text-sm font-medium text-heading">Active WhatsApp Number</Label>
           <Input
             id="whatsapp"
@@ -119,6 +109,35 @@ const LeadGenForm = () => {
             required
             maxLength={20}
             value={formData.whatsapp}
+            onChange={handleChange}
+            className="mt-1"
+          />
+        </div>
+        <div>
+          <Label htmlFor="needsSeo" className="text-sm font-medium text-heading">Do you need SEO services?</Label>
+          <select
+            id="needsSeo"
+            name="needsSeo"
+            required
+            value={formData.needsSeo}
+            onChange={handleChange}
+            className="mt-1 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+          >
+            <option value="" disabled>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div>
+          <Label htmlFor="website" className="text-sm font-medium text-heading">Website URL</Label>
+          <Input
+            id="website"
+            name="website"
+            type="text"
+            placeholder="yourwebsite.com"
+            required
+            maxLength={500}
+            value={formData.website}
             onChange={handleChange}
             className="mt-1"
           />
