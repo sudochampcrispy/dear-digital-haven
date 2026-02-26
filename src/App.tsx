@@ -70,6 +70,16 @@ const SeoClifton = lazy(() => import("./pages/SeoClifton"));
 const SeoGulshanEIqbal = lazy(() => import("./pages/SeoGulshanEIqbal"));
 const SeoPechs = lazy(() => import("./pages/SeoPechs"));
 const SeoNorthNazimabad = lazy(() => import("./pages/SeoNorthNazimabad"));
+const SeoGulistanEJohar = lazy(() => import("./pages/SeoGulistanEJohar"));
+const SeoSaddar = lazy(() => import("./pages/SeoSaddar"));
+const SeoKorangi = lazy(() => import("./pages/SeoKorangi"));
+const SeoMalir = lazy(() => import("./pages/SeoMalir"));
+const SeoNazimabad = lazy(() => import("./pages/SeoNazimabad"));
+const SeoFBArea = lazy(() => import("./pages/SeoFBArea"));
+const SeoTariqRoad = lazy(() => import("./pages/SeoTariqRoad"));
+const SeoBahadurabad = lazy(() => import("./pages/SeoBahadurabad"));
+const SeoShahrahEFaisal = lazy(() => import("./pages/SeoShahrahEFaisal"));
+const SeoScheme33 = lazy(() => import("./pages/SeoScheme33"));
 
 const queryClient = new QueryClient();
 
@@ -145,6 +155,16 @@ const App = () => (
             <Route path="/gulshan-e-iqbal" element={<SeoGulshanEIqbal />} />
             <Route path="/pechs" element={<SeoPechs />} />
             <Route path="/north-nazimabad" element={<SeoNorthNazimabad />} />
+            <Route path="/gulistan-e-johar" element={<SeoGulistanEJohar />} />
+            <Route path="/saddar" element={<SeoSaddar />} />
+            <Route path="/korangi" element={<SeoKorangi />} />
+            <Route path="/malir" element={<SeoMalir />} />
+            <Route path="/nazimabad" element={<SeoNazimabad />} />
+            <Route path="/fb-area" element={<SeoFBArea />} />
+            <Route path="/tariq-road" element={<SeoTariqRoad />} />
+            <Route path="/bahadurabad" element={<SeoBahadurabad />} />
+            <Route path="/shahrah-e-faisal" element={<SeoShahrahEFaisal />} />
+            <Route path="/scheme-33" element={<SeoScheme33 />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
