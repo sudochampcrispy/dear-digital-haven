@@ -7,15 +7,15 @@ import LeadGenForm from "@/components/LeadGenForm";
 import { CheckCircle2, MapPin, ArrowRight } from "lucide-react";
 
 const BASE = "https://seoexpertinkarachi.com";
-const SLUG = "/north-nazimabad";
-const TITLE = "SEO Expert in North Nazimabad, Karachi — Naveed Ganatra";
+const SLUG = "/gulistan-e-johar";
+const TITLE = "SEO Expert in Gulistan-e-Johar, Karachi — Naveed Ganatra";
 const DESC =
-  "Looking for an SEO expert in North Nazimabad, Karachi? Naveed Ganatra helps businesses in North Nazimabad Block A–N, Sakhi Hassan, Hyderi, and Five Star Chowrangi rank higher on Google and attract more local customers.";
+  "Looking for an SEO expert in Gulistan-e-Johar, Karachi? Naveed Ganatra helps businesses in Johar Block 1–19, Perfume Chowk, Samama Shopping Centre, and surrounding areas rank higher on Google and attract more local customers.";
 
 const breadcrumb = buildBreadcrumb([
   { name: "Home", url: BASE + "/" },
   { name: "Local SEO Karachi", url: BASE + "/local-seo-karachi" },
-  { name: "North Nazimabad", url: BASE + SLUG },
+  { name: "Gulistan-e-Johar", url: BASE + SLUG },
 ]);
 
 const webPage = buildWebPage({ name: TITLE, description: DESC, url: BASE + SLUG });
@@ -26,7 +26,7 @@ const serviceSchema = {
   provider: { "@type": "Person", name: "Naveed Ganatra" },
   areaServed: {
     "@type": "Place",
-    name: "North Nazimabad, Karachi",
+    name: "Gulistan-e-Johar, Karachi",
     containedInPlace: { "@type": "City", name: "Karachi" },
   },
   serviceType: "Search Engine Optimization",
@@ -35,23 +35,23 @@ const serviceSchema = {
 
 const faqData = [
   {
-    q: "Why do North Nazimabad businesses need local SEO?",
-    a: "North Nazimabad is one of Karachi's most densely populated residential areas with blocks A through N. Residents search for local services using block letters, chowrangi names, and landmarks like Sakhi Hassan and Hyderi Market. If your business isn't optimized for these specific searches, potential customers are finding your competitors instead.",
+    q: "Why do Gulistan-e-Johar businesses need local SEO?",
+    a: "Gulistan-e-Johar is one of Karachi's fastest-growing residential areas with 19 blocks and a rapidly expanding population. Residents search for services by block number and local landmarks like Perfume Chowk and Samama. Businesses that optimize for these specific searches capture customers that generic Karachi-level campaigns completely miss.",
   },
   {
     q: "Which blocks and areas do you cover?",
-    a: "All North Nazimabad blocks (A through N), plus the major commercial zones — Sakhi Hassan Chowrangi, Hyderi Market, Five Star Chowrangi, Power House Chowrangi, and the commercial strips along Abul Hasan Isphahani Road.",
+    a: "All 19 Johar blocks plus the major commercial zones — Perfume Chowk, Samama Shopping Centre, Johar Chowrangi, Dalmia area, and the block markets in Block 7, 13, and 14. Each area has different customer patterns.",
   },
   {
-    q: "How competitive is local search in North Nazimabad?",
-    a: "Moderate, which is actually good news. The area's density means high search demand, but very few businesses here invest in proper local SEO. This creates a real opportunity for businesses that get in early with neighbourhood-optimized content.",
+    q: "Is Johar a good area for SEO investment?",
+    a: "Excellent. Johar has high population density, growing commercial activity, and very low SEO competition. Most businesses here haven't invested in local SEO yet, so early movers can dominate search results with relatively modest effort.",
   },
   {
     q: "How long does it take to see results?",
-    a: "For specific queries like 'bakery near Sakhi Hassan' you can expect improvements within 4–8 weeks. More competitive terms like 'best restaurant North Nazimabad' typically take 3–5 months. I provide monthly reports so you can track progress throughout.",
+    a: "For specific queries like 'pharmacy Johar Block 14 Karachi,' improvements come within 4–8 weeks. More competitive terms typically take 3–5 months. Monthly reports keep you informed of progress throughout.",
   },
   {
-    q: "What does a North Nazimabad SEO campaign cost?",
+    q: "What does a Johar SEO campaign cost?",
     a: "Campaigns typically range from PKR 25,000–90,000 per month depending on your industry and goals. I offer a free initial audit so you can see what's needed before making any commitment.",
   },
 ];
@@ -66,7 +66,7 @@ const faqSchema = {
   })),
 };
 
-const SeoNorthNazimabad = () => (
+const SeoGulistanEJohar = () => (
   <Layout>
     <SeoHead title={TITLE} description={DESC} canonical={BASE + SLUG} />
     <JsonLd data={serviceSchema} />
@@ -82,19 +82,19 @@ const SeoNorthNazimabad = () => (
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-4">
-                SEO Expert · North Nazimabad, Karachi
+                SEO Expert · Gulistan-e-Johar, Karachi
               </p>
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
-                SEO Expert in North Nazimabad, Karachi
+                SEO Expert in Gulistan-e-Johar, Karachi
               </h1>
               <p className="text-lg text-body mb-4">
-                North Nazimabad is Karachi's residential heartland — a well-established neighbourhood spanning blocks A through N with a strong middle-class consumer base. From the commercial energy of Sakhi Hassan Chowrangi to the neighbourhood shops at Hyderi Market, this area has consistent, year-round demand for local services. The customers are searching — the question is whether they're finding you or your competitor.
+                Gulistan-e-Johar is one of Karachi's fastest-growing neighbourhoods — 19 blocks with a rapidly expanding population and a commercial scene that's developing fast. New restaurants, clinics, coaching centres, and retail shops are opening regularly, and the competition for local customers is intensifying. The businesses that show up on Google are the ones that win.
               </p>
               <p className="text-base text-body mb-4">
-                I help North Nazimabad businesses get found on Google for the searches that actually bring in customers. People here don't search for "service in Karachi" — they search for "biryani near Sakhi Hassan," "dentist North Nazimabad Block H," or "tuition centre Five Star Chowrangi." I build your SEO strategy around these exact search patterns.
+                I help Johar businesses get found on Google for the searches that matter most. Residents here search by block number and landmark — "dentist Johar Block 14," "restaurant near Perfume Chowk," "gym Gulistan-e-Johar." I build your SEO strategy around these exact patterns so your business shows up when it counts.
               </p>
               <p className="text-base text-body mb-8">
-                The best part? Most businesses in North Nazimabad haven't invested in local SEO yet. That means there's a real first-mover advantage for businesses that optimize now. I'll handle everything — Google Business Profile, content, technical fixes — with clear monthly reports so you always know what's working.
+                The good news? Most businesses in Johar haven't invested in proper SEO yet. That means there's a genuine first-mover advantage for those who start now. I'll optimize your Google presence, build the right content, and give you clear monthly reports showing exactly what's working.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://wa.me/923232877850" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
@@ -110,53 +110,53 @@ const SeoNorthNazimabad = () => (
         </div>
       </section>
 
-      {/* Why North Nazimabad */}
-      <section className="section-padding" aria-label="Why North Nazimabad businesses struggle on Google">
+      {/* Why Johar */}
+      <section className="section-padding" aria-label="Why Johar businesses need SEO">
         <div className="section-container">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-3xl font-bold mb-4">Why Local SEO Matters in North Nazimabad</h2>
+            <h2 className="text-3xl font-bold mb-4">Why Local SEO Matters in Gulistan-e-Johar</h2>
             <p className="text-body">
-              North Nazimabad's population density creates massive search demand for everyday services. Hundreds of businesses serve the same residential catchment across 14 blocks — but very few have invested in proper local SEO. This creates a genuine opportunity: the businesses that optimize now will dominate the local search results before competitors catch on.
+              Johar's rapid growth means more businesses opening and more residents searching for services online. The area's 19 blocks and expanding population create massive search demand — but most businesses here rely on word-of-mouth alone. Those that invest in local SEO now will establish themselves as the go-to options before competitors catch on.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="metric-card text-center">
-              <p className="stat-number text-3xl">14</p>
-              <p className="text-xs text-subtle mt-1">Blocks (A–N) with local markets</p>
+              <p className="stat-number text-3xl">19</p>
+              <p className="text-xs text-subtle mt-1">Blocks with growing markets</p>
             </div>
             <div className="metric-card text-center">
-              <p className="stat-number text-3xl">High</p>
-              <p className="text-xs text-subtle mt-1">Population density & search demand</p>
+              <p className="stat-number text-3xl">Fast</p>
+              <p className="text-xs text-subtle mt-1">Population & commercial growth</p>
             </div>
             <div className="metric-card text-center">
               <p className="stat-number text-3xl">Low</p>
-              <p className="text-xs text-subtle mt-1">Current SEO competition level</p>
+              <p className="text-xs text-subtle mt-1">Current SEO competition</p>
             </div>
             <div className="metric-card text-center">
               <p className="stat-number text-3xl">Big</p>
-              <p className="text-xs text-subtle mt-1">First-mover advantage opportunity</p>
+              <p className="text-xs text-subtle mt-1">First-mover advantage</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Areas I Cover */}
-      <section className="section-padding surface-sunken" aria-label="Areas in North Nazimabad">
+      <section className="section-padding surface-sunken" aria-label="Areas in Johar">
         <div className="section-container">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-3xl font-bold mb-4">Areas in North Nazimabad I Cover</h2>
+            <h2 className="text-3xl font-bold mb-4">Areas in Gulistan-e-Johar I Cover</h2>
             <p className="text-body">
-              Each commercial zone in North Nazimabad has its own customer base and search behaviour. I build your strategy around the specific areas where your customers are looking.
+              Johar's commercial landscape is spread across multiple hubs, each with its own search patterns. I target the specific areas where your customers are searching.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Sakhi Hassan Chowrangi", desc: "Major commercial junction with high foot traffic. Restaurants, bakeries, electronics shops, and service businesses — everyone competes for attention here, but few optimize for Google." },
-              { name: "Hyderi Market", desc: "Traditional neighbourhood market with strong daily-need searches — grocery, butcher, pharmacy, and household services. Consistent demand, low SEO competition." },
-              { name: "Five Star Chowrangi", desc: "Secondary commercial node connecting to Buffer Zone. Food, automotive, and retail searches dominate — a great opportunity for businesses ready to invest in visibility." },
-              { name: "Power House Chowrangi", desc: "Growing commercial area with medical clinics, coaching centres, and service businesses. Search interest is rising and competition is still manageable." },
-              { name: "Abul Hasan Isphahani Road", desc: "Connecting artery with banks, schools, and mixed commercial development. Professional service searches are increasing as the area develops." },
-              { name: "Block D & J Markets", desc: "Internal residential hubs serving day-to-day needs. Low competition makes these areas quick wins for businesses investing in local SEO." },
+              { name: "Perfume Chowk", desc: "Johar's busiest commercial landmark with restaurants, retail shops, and service businesses. Being visible when someone searches 'near Perfume Chowk' is essential for any business here." },
+              { name: "Samama Shopping Centre", desc: "Major shopping destination drawing customers from across Johar. Retail and dining businesses near Samama benefit from landmark-based searches." },
+              { name: "Johar Chowrangi", desc: "Central junction connecting multiple Johar blocks. Mixed commercial activity with restaurants, banks, and everyday services generating steady search traffic." },
+              { name: "Block 7 & Block 13 Markets", desc: "Active residential markets with consistent demand for groceries, pharmacies, salons, and daily services — reliable year-round search volume." },
+              { name: "Dalmia Area", desc: "Connecting zone between Johar and surrounding neighbourhoods. Growing commercial development means increasing search interest with low competition." },
+              { name: "Block 14–19 (New Blocks)", desc: "Johar's newest and fastest-growing blocks. Commercial activity is ramping up quickly — businesses here can establish Google dominance early." },
             ].map((area) => (
               <div key={area.name} className="metric-card">
                 <h3 className="font-semibold text-heading mb-2 flex items-center gap-2">
@@ -175,18 +175,18 @@ const SeoNorthNazimabad = () => (
           <div className="text-center max-w-4xl mx-auto mb-10">
             <h2 className="text-3xl font-bold mb-4">What You Get When You Work With Me</h2>
             <p className="text-body">
-              Every campaign is built around getting your North Nazimabad business in front of the people who are actively searching for what you offer. Here's what's included:
+              Every campaign is built around getting your Johar business in front of the right customers at the right time. Here's what's included:
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              "Keyword research focused on North Nazimabad searches — by block, chowrangi, and landmark",
+              "Keyword research focused on Johar-specific searches — by block, chowk, and landmark",
               "Google Business Profile setup and optimization with local photos and regular updates",
-              "Content pages built around how North Nazimabad residents actually search for your services",
-              "Listings on Pakistani business directories with accurate address and contact details",
+              "Content pages built around how Johar residents actually search for your services",
+              "Listings on Pakistani business directories with accurate Johar address and contact details",
               "A strategy to get more genuine Google reviews from your local customers",
               "Technical improvements to make your website faster and easier for Google to understand",
-              "Analysis of what your competitors are doing on Google — and how to outrank them",
+              "Analysis of what your Johar competitors are doing on Google — and how to outrank them",
               "Monthly reports showing exactly where you rank and how much traffic you're getting",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
@@ -199,22 +199,22 @@ const SeoNorthNazimabad = () => (
       </section>
 
       {/* Industries */}
-      <section className="section-padding surface-sunken" aria-label="Industries in North Nazimabad">
+      <section className="section-padding surface-sunken" aria-label="Industries in Johar">
         <div className="section-container">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-3xl font-bold mb-4">Industries I Can Help in North Nazimabad</h2>
+            <h2 className="text-3xl font-bold mb-4">Industries I Can Help in Gulistan-e-Johar</h2>
             <p className="text-body">
-              North Nazimabad's economy runs on everyday services and neighbourhood commerce. Whether you're an established business or just starting out, here's how SEO can bring more customers through your door.
+              Johar's commercial landscape is growing fast. Whether you're an established business or just opened, here's how SEO can bring more customers to your door.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              { title: "Restaurants & Bakeries", desc: "From Sakhi Hassan to Hyderi, food businesses compete fiercely. When someone searches 'best nihari North Nazimabad' or 'bakery near Sakhi Hassan,' your business needs to show up." },
-              { title: "Doctors & Medical Clinics", desc: "Residents search for general practitioners and specialists by block and chowrangi. A strong Google presence means patients choose you over the clinic down the street." },
-              { title: "Coaching Centres & Tuition", desc: "Education is big in North Nazimabad. Parents search for tutors by subject, level, and location — ranking for these searches fills your classrooms." },
-              { title: "Real Estate & Property", desc: "North Nazimabad property moves fast. Buyers and renters search by block letter and property type — being visible on Google connects you with ready buyers." },
-              { title: "Gyms & Fitness", desc: "Health-conscious residents search for gyms and fitness options near their block. Local SEO puts your facility in front of people ready to sign up." },
-              { title: "Salons & Beauty Services", desc: "Neighbourhood salons compete for a loyal local clientele. Google visibility ensures new residents and nearby customers find you first." },
+              { title: "Restaurants & Fast Food", desc: "Johar's dining scene is expanding rapidly. When someone searches 'best pizza Gulistan-e-Johar' or 'restaurant near Perfume Chowk,' your business needs to be the top result." },
+              { title: "Doctors & Medical Clinics", desc: "Residents search for healthcare by block and speciality. A strong Google presence means patients choose your clinic over the competition." },
+              { title: "Coaching Centres & Academies", desc: "Education demand is massive in Johar. Parents search for tuition by subject, level, and block — ranking for these searches fills your classrooms." },
+              { title: "Real Estate & Property", desc: "Johar property is moving fast, especially in newer blocks. Buyers search by block number and property type — being visible connects you with ready buyers." },
+              { title: "Gyms & Fitness Studios", desc: "Health-conscious Johar residents search for fitness options near their block. Local SEO puts your gym in front of people ready to sign up." },
+              { title: "Retail & Shopping", desc: "From Samama Shopping Centre to block markets, Johar shoppers search before they visit. Product-focused content helps them find your store." },
             ].map((ind) => (
               <div key={ind.title} className="metric-card">
                 <h3 className="font-semibold text-heading mb-2">{ind.title}</h3>
@@ -227,13 +227,13 @@ const SeoNorthNazimabad = () => (
             <div className="flex flex-wrap justify-center gap-2">
               {[
                 "Pharmacies & Medical Stores",
+                "Salons & Beauty Studios",
                 "Car Workshops & Auto Services",
-                "Tailors & Clothing Shops",
                 "Mobile Phone Shops",
-                "Grocery & General Stores",
+                "Grocery & Supermarkets",
                 "Dental Clinics",
-                "Electronics Repair Shops",
-                "Bookstores & Stationery",
+                "Tailors & Clothing Shops",
+                "Electronics Repair",
                 "Wedding & Event Services",
                 "Plumbers & Electricians",
                 "Furniture Shops",
@@ -272,10 +272,10 @@ const SeoNorthNazimabad = () => (
           <h2 className="text-2xl font-bold mb-4">Also Serving Nearby Areas</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "Nazimabad", link: "/nazimabad" },
-              { name: "FB Area", link: "/fb-area" },
               { name: "Gulshan-e-Iqbal", link: "/gulshan-e-iqbal" },
-              { name: "Gulistan-e-Johar", link: "/gulistan-e-johar" },
+              { name: "Scheme 33", link: "/scheme-33" },
+              { name: "Malir", link: "/malir" },
+              { name: "Korangi", link: "/korangi" },
             ].map((a) => (
               <Link key={a.name} to={a.link} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading hover:text-primary transition-colors">
                 <MapPin className="h-3.5 w-3.5 text-primary mr-2" /> SEO Expert in {a.name}
@@ -285,9 +285,9 @@ const SeoNorthNazimabad = () => (
         </div>
       </aside>
 
-      <CtaBanner heading="Want More Customers From Google in North Nazimabad?" text="Get a free SEO audit for your North Nazimabad business. I'll show you exactly where you're losing traffic and how to fix it." />
+      <CtaBanner heading="Want More Customers From Google in Johar?" text="Get a free SEO audit for your Gulistan-e-Johar business. I'll show you exactly where you're losing traffic and how to fix it." />
     </main>
   </Layout>
 );
 
-export default SeoNorthNazimabad;
+export default SeoGulistanEJohar;

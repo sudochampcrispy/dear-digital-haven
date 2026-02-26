@@ -10,7 +10,7 @@ const BASE = "https://seoexpertinkarachi.com";
 const SLUG = "/pechs";
 const TITLE = "SEO Expert in PECHS, Karachi — Naveed Ganatra";
 const DESC =
-  "Hire an SEO expert in PECHS (Pakistan Employees Cooperative Housing Society), Karachi. Naveed Ganatra provides hyperlocal SEO for businesses on Tariq Road, Shahrah-e-Quaideen, and PECHS Block 1–6 — driving qualified local traffic and top Google rankings.";
+  "Looking for an SEO expert in PECHS, Karachi? Naveed Ganatra helps businesses in PECHS Block 1–6, Tariq Road, Shahrah-e-Quaideen, and Khalid Bin Waleed Road rank higher on Google and attract more local customers.";
 
 const breadcrumb = buildBreadcrumb([
   { name: "Home", url: BASE + "/" },
@@ -36,23 +36,23 @@ const serviceSchema = {
 const faqData = [
   {
     q: "What makes PECHS a strong market for local SEO?",
-    a: "PECHS sits at the geographic heart of Karachi, connecting Clifton, Gulshan, and Saddar. Its central location and established commercial infrastructure — especially along Tariq Road and Shahrah-e-Quaideen — generate high search volume for shopping, dining, healthcare, and professional services. Businesses here capture traffic from multiple surrounding neighbourhoods.",
+    a: "PECHS sits at Karachi's geographic centre, connecting Clifton, Gulshan, and Saddar. Its central location and established commercial infrastructure — especially Tariq Road and Shahrah-e-Quaideen — generate high search volume for shopping, dining, healthcare, and professional services. Businesses here naturally draw customers from multiple surrounding neighbourhoods.",
   },
   {
-    q: "Which PECHS blocks and roads do you optimize for?",
-    a: "I cover all six PECHS blocks plus the major commercial arteries: Tariq Road, Shahrah-e-Quaideen, Main PECHS Boulevard, Khalid Bin Waleed Road, and the commercial lanes in Block 2 and Block 6. Each zone has unique search patterns that require tailored keyword strategies.",
+    q: "Which parts of PECHS do you cover?",
+    a: "All six PECHS blocks plus the major commercial roads — Tariq Road, Shahrah-e-Quaideen, Khalid Bin Waleed Road, Main PECHS Boulevard, and the commercial areas in Block 2 and Block 6. Each zone has unique search patterns that need different keyword strategies.",
   },
   {
-    q: "How do you handle Tariq Road's competitive search landscape?",
-    a: "Tariq Road is one of Karachi's busiest shopping streets with hundreds of retail stores competing for visibility. My approach combines product-category landing pages, Google Shopping-optimized content, aggressive GBP posting schedules, and structured data for retail to differentiate your store from competitors.",
+    q: "How competitive is Tariq Road for SEO?",
+    a: "Very competitive. Tariq Road is one of Pakistan's busiest shopping streets with hundreds of retail stores. Standing out requires product-category content, an active Google Business Profile with regular posts, genuine reviews, and a website that loads fast on mobile — where most shoppers search.",
   },
   {
-    q: "Can you help law firms and corporate offices in PECHS with SEO?",
-    a: "Absolutely. PECHS hosts a high concentration of law firms, chartered accountancy practices, and corporate offices. I implement ProfessionalService schema, practice-area landing pages, and authority-building content strategies specifically designed for professional service providers in PECHS.",
+    q: "Can you help law firms and corporate offices in PECHS?",
+    a: "Yes. PECHS has a high concentration of law firms and chartered accountancy practices. I build service-area pages, implement professional service schema, and create authority content that positions your firm as the trusted choice when potential clients search for legal or financial help in the area.",
   },
   {
-    q: "What's the typical timeline for PECHS SEO results?",
-    a: "Long-tail hyperlocal queries like 'tailor PECHS Block 2 Karachi' can rank within 4–6 weeks. Competitive commercial terms like 'best shopping Tariq Road' typically take 3–5 months. All campaigns include monthly reporting with PECHS-specific keyword tracking.",
+    q: "What does a PECHS SEO campaign typically cost?",
+    a: "Campaigns for PECHS businesses typically range from PKR 35,000–120,000 per month depending on your industry, competition, and goals. I offer a free initial audit so you can see exactly what's needed before committing.",
   },
 ];
 
@@ -82,23 +82,23 @@ const SeoPechs = () => (
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-4">
-                Hyperlocal SEO · PECHS, Karachi
+                SEO Expert · PECHS, Karachi
               </p>
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
                 SEO Expert in PECHS, Karachi
               </h1>
               <p className="text-lg text-body mb-4">
-                PECHS is Karachi's central commercial powerhouse — home to Tariq Road (one of Pakistan's busiest shopping streets), a dense concentration of law firms and corporate offices, and a thriving healthcare sector. The area's geographic centrality means businesses here draw customers from Clifton, Gulshan, Saddar, and beyond.
+                PECHS is Karachi's central commercial hub — home to Tariq Road (one of Pakistan's busiest shopping streets), a dense concentration of law firms and corporate offices, and a thriving healthcare sector. Its location means businesses here draw customers from Clifton, Gulshan, Saddar, and beyond.
               </p>
               <p className="text-base text-body mb-4">
-                But centrality also means competition. Hundreds of businesses across six PECHS blocks compete for the same Google real estate. My hyperlocal SEO strategy targets the specific roads, blocks, and landmarks that PECHS searchers reference — "shoes Tariq Road Karachi," "dentist PECHS Block 2," "lawyer near Shahrah-e-Quaideen." This precision targeting captures the high-intent queries that generic city-level campaigns completely miss.
+                But centrality also means competition. Hundreds of businesses across six PECHS blocks fight for the same customers on Google. I help PECHS businesses stand out by targeting the specific roads, blocks, and landmarks that people actually search for — "shoes Tariq Road Karachi," "dentist PECHS Block 2," "lawyer Shahrah-e-Quaideen." These precise, high-intent searches are where the real customers come from.
               </p>
               <p className="text-base text-body mb-8">
-                From entity-based content architecture to local citation building and Core Web Vitals optimization — I deliver sustainable organic growth for PECHS businesses.
+                From optimizing your Google Business Profile and building content that matches how PECHS residents search, to earning your spot in the local map pack — everything I do is focused on measurable results with transparent monthly reporting.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://wa.me/923232877850" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
-                  Get Free PECHS SEO Audit <ArrowRight className="h-4 w-4" />
+                  Get a Free SEO Audit <ArrowRight className="h-4 w-4" />
                 </a>
                 <Link to="/case-studies" className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary">
                   View Case Studies
@@ -111,45 +111,52 @@ const SeoPechs = () => (
       </section>
 
       {/* Why PECHS */}
-      <section className="section-padding" aria-label="Why PECHS needs local SEO">
+      <section className="section-padding" aria-label="Why PECHS businesses struggle on Google">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">Why PECHS Businesses Need Neighbourhood-Level SEO</h2>
-          <p className="text-body max-w-3xl mb-6">
-            PECHS combines residential density with Karachi's most iconic shopping district. Tariq Road alone generates thousands of daily search queries for clothing, electronics, and retail. Add the professional services in Blocks 2 and 6, healthcare facilities along Shahrah-e-Quaideen, and the dining scene on Khalid Bin Waleed Road — and you have a neighbourhood with extraordinary search demand that rewards precision targeting.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">Why Most PECHS Businesses Struggle on Google</h2>
+            <p className="text-body">
+              PECHS combines residential density with Karachi's most iconic shopping district. Tariq Road alone generates thousands of daily searches for clothing, electronics, and retail. Add the professional services in Blocks 2 and 6, healthcare along Shahrah-e-Quaideen, and dining on Khalid Bin Waleed Road — and you have a neighbourhood where generic SEO simply doesn't cut it.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="metric-card text-center">
               <p className="stat-number text-3xl">6</p>
               <p className="text-xs text-subtle mt-1">PECHS blocks with distinct markets</p>
             </div>
             <div className="metric-card text-center">
-              <p className="stat-number text-3xl">10K+</p>
-              <p className="text-xs text-subtle mt-1">Tariq Road daily search queries</p>
+              <p className="stat-number text-3xl">High</p>
+              <p className="text-xs text-subtle mt-1">Tariq Road daily search volume</p>
             </div>
             <div className="metric-card text-center">
-              <p className="stat-number text-3xl">4x</p>
-              <p className="text-xs text-subtle mt-1">Retail conversion from local SEO</p>
+              <p className="stat-number text-3xl">Central</p>
+              <p className="text-xs text-subtle mt-1">Location draws from all sides</p>
             </div>
             <div className="metric-card text-center">
               <p className="stat-number text-3xl">65%</p>
-              <p className="text-xs text-subtle mt-1">PECHS searches include road or block</p>
+              <p className="text-xs text-subtle mt-1">Searches include a road or block</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Micro-Areas */}
-      <section className="section-padding surface-sunken" aria-label="PECHS commercial zones">
+      {/* Areas I Cover */}
+      <section className="section-padding surface-sunken" aria-label="Areas in PECHS">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">Commercial Zones I Target in PECHS</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">Areas in PECHS I Cover</h2>
+            <p className="text-body">
+              Each commercial zone in PECHS has its own customer base and search patterns. I build your SEO strategy around the specific locations where your business operates.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Tariq Road", desc: "Karachi's premier shopping street. Clothing, jewellery, and electronics retailers need product-focused landing pages and aggressive local pack strategies." },
-              { name: "Shahrah-e-Quaideen", desc: "Healthcare and professional services corridor. Medical clinics, diagnostic labs, and law firms dominate the search landscape here." },
-              { name: "Khalid Bin Waleed Road", desc: "Connecting PECHS to Saddar with diverse commercial activity — electronics markets, restaurants, and service businesses." },
-              { name: "Block 2 Commercial", desc: "Professional services hub with chartered accountant offices, law firms, and consultancies. B2B keyword targeting is essential." },
-              { name: "Block 6 Market", desc: "Residential block market with everyday service queries — grocery, pharmacy, salon, and maintenance services." },
-              { name: "Main PECHS Boulevard", desc: "The internal connecting road with cafés, tuition centres, and small businesses serving the residential blocks." },
+              { name: "Tariq Road", desc: "Karachi's premier shopping street. Clothing, jewellery, and electronics retailers face intense competition — standing out on Google is the difference between a packed shop and an empty one." },
+              { name: "Shahrah-e-Quaideen", desc: "Healthcare and professional services corridor. Medical clinics, diagnostic labs, and law firms draw patients and clients from across the city." },
+              { name: "Khalid Bin Waleed Road", desc: "Connecting PECHS to Saddar with diverse commercial activity — electronics markets, restaurants, and service businesses serving a wide catchment area." },
+              { name: "Block 2 Commercial", desc: "Professional services hub with law firms, CA offices, and consultancies. People searching here are looking for trusted professionals, not window shopping." },
+              { name: "Block 6 Market", desc: "Residential market with everyday service queries — grocery, pharmacy, salon, maintenance. Consistent year-round demand with low SEO competition." },
+              { name: "Main PECHS Boulevard", desc: "Internal connecting road with cafés, tuition centres, and small businesses serving the residential blocks. Growing search interest with room to dominate." },
             ].map((area) => (
               <div key={area.name} className="metric-card">
                 <h3 className="font-semibold text-heading mb-2 flex items-center gap-2">
@@ -162,20 +169,25 @@ const SeoPechs = () => (
         </div>
       </section>
 
-      {/* Deliverables */}
-      <section className="section-padding" aria-label="PECHS SEO deliverables">
+      {/* What You Get */}
+      <section className="section-padding" aria-label="What you get">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">My PECHS SEO Strategy — What's Included</h2>
-          <div className="grid sm:grid-cols-2 gap-6 mt-8">
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">What You Get When You Work With Me</h2>
+            <p className="text-body">
+              Every campaign is built around getting your PECHS business in front of the people who are actively searching for what you offer. Here's what's included:
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6">
             {[
-              "Block-level and road-level keyword research for all PECHS zones",
-              "Google Business Profile optimization with PECHS-specific categories and photos",
-              "Landing pages targeting 'best [service] PECHS' and Tariq Road queries",
-              "Retail SEO for Tariq Road stores — product categories and shopping intent",
-              "Professional services SEO for law firms and CA offices in PECHS",
-              "Local citation building with PECHS-accurate NAP data across directories",
-              "Schema markup — LocalBusiness, Store, LegalService, MedicalBusiness",
-              "Monthly reporting with PECHS-specific keyword position tracking",
+              "Keyword research focused on PECHS-specific searches — by block, road, and landmark",
+              "Google Business Profile setup and optimization with local photos and regular updates",
+              "Content pages built around how PECHS residents and shoppers actually search",
+              "Listings on Pakistani business directories with accurate PECHS address and contact details",
+              "A strategy to get more genuine Google reviews from your PECHS customers",
+              "Technical improvements to make your website faster and easier for Google to understand",
+              "Analysis of what your top-ranking PECHS competitors are doing — and how to beat them",
+              "Monthly reports showing exactly where you rank and how much traffic you're getting",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -186,11 +198,61 @@ const SeoPechs = () => (
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="section-padding surface-sunken" aria-label="PECHS SEO FAQs">
+      {/* Industries */}
+      <section className="section-padding surface-sunken" aria-label="Industries in PECHS">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-10">PECHS SEO — Frequently Asked Questions</h2>
-          <div className="max-w-4xl space-y-6">
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">Industries I Can Help in PECHS</h2>
+            <p className="text-body">
+              PECHS has one of the most diverse commercial landscapes in Karachi — from high-street retail to professional services. Here's how SEO can bring more customers to businesses like yours.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {[
+              { title: "Retail & Fashion (Tariq Road)", desc: "Tariq Road shoppers search by product category — 'bridal lehenga Tariq Road,' 'men's shoes PECHS.' Product-focused content and shopping intent optimization bring them to your store." },
+              { title: "Law Firms & Legal Services", desc: "Corporate law, property disputes, family matters — PECHS has a high concentration of legal professionals. Professional content and trust signals build credibility before clients call." },
+              { title: "Doctors & Medical Clinics", desc: "Patients search for specialists along Shahrah-e-Quaideen by speciality and proximity. Strong Google profiles and trustworthy content bring them to your clinic." },
+              { title: "Chartered Accountants & Finance", desc: "Tax season drives massive search spikes for CA firms in PECHS. Year-round content keeps you visible for business accounting, audit, and financial advisory searches." },
+              { title: "Restaurants & Cafés", desc: "PECHS dining options compete with Clifton and DHA. When someone searches 'lunch near Tariq Road' or 'café PECHS,' your restaurant needs to be the answer." },
+              { title: "Jewellery & Bridal Shops", desc: "Tariq Road is synonymous with bridal shopping. Ranking for 'gold jewellery Tariq Road' or 'bridal sets PECHS' connects you with high-value customers." },
+            ].map((ind) => (
+              <div key={ind.title} className="metric-card">
+                <h3 className="font-semibold text-heading mb-2">{ind.title}</h3>
+                <p className="text-sm text-body">{ind.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <p className="text-sm font-semibold text-heading mb-4">Also Serving</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                "Electronics & Mobile Shops",
+                "Salons & Beauty Studios",
+                "Coaching Centres & Academies",
+                "Pharmacies & Diagnostic Labs",
+                "Real Estate Agencies",
+                "Tailors & Alteration Shops",
+                "IT Companies & Startups",
+                "Dental Clinics",
+                "Event & Wedding Planners",
+                "Gyms & Fitness Centres",
+                "Travel Agencies",
+                "Furniture & Home Décor",
+              ].map((name) => (
+                <span key={name} className="inline-flex items-center rounded-md border border-border bg-card px-3 py-1.5 text-xs font-medium text-heading">
+                  {name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding" aria-label="FAQs">
+        <div className="section-container">
+          <h2 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+          <div className="max-w-4xl mx-auto space-y-6">
             {faqData.map((f) => (
               <details key={f.q} className="group metric-card">
                 <summary className="cursor-pointer font-semibold text-heading list-none flex items-center justify-between">
@@ -204,10 +266,10 @@ const SeoPechs = () => (
         </div>
       </section>
 
-      {/* Internal Links */}
-      <aside className="section-padding" aria-label="Nearby areas">
+      {/* Internal Linking */}
+      <aside className="section-padding surface-sunken" aria-label="Nearby areas">
         <div className="section-container text-center">
-          <h2 className="text-2xl font-bold mb-4">SEO Services in Nearby Areas</h2>
+          <h2 className="text-2xl font-bold mb-4">Also Serving Nearby Areas</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { name: "Tariq Road", link: "/tariq-road" },
@@ -223,7 +285,7 @@ const SeoPechs = () => (
         </div>
       </aside>
 
-      <CtaBanner heading="Ready to Dominate Local Search in PECHS?" text="Get a free hyperlocal SEO audit for your PECHS business and start outranking competitors on Tariq Road and beyond." />
+      <CtaBanner heading="Want More Customers From Google in PECHS?" text="Get a free SEO audit for your PECHS business. I'll show you exactly where you're losing traffic and how to fix it." />
     </main>
   </Layout>
 );
