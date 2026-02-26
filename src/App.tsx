@@ -21,6 +21,7 @@ const BlogOptimizeYouTubeAI = lazy(() => import("./pages/BlogOptimizeYouTubeAI")
 const BlogLocalSeoAI = lazy(() => import("./pages/BlogLocalSeoAI"));
 const BlogRankingGuide = lazy(() => import("./pages/BlogRankingGuide"));
 const BlogAICitationTraffic = lazy(() => import("./pages/BlogAICitationTraffic"));
+const BlogEntitySeo = lazy(() => import("./pages/BlogEntitySeo"));
 const TechnicalSeo = lazy(() => import("./pages/TechnicalSeo"));
 const OnPageSeo = lazy(() => import("./pages/OnPageSeo"));
 const OffPageSeo = lazy(() => import("./pages/OffPageSeo"));
@@ -107,6 +108,7 @@ const App = () => (
             <Route path="/blog/local-seo-changed-ai-search" element={<BlogLocalSeoAI />} />
             <Route path="/blog/blog-ranking-guide-2026" element={<BlogRankingGuide />} />
             <Route path="/blog/ai-citation-traffic-source" element={<BlogAICitationTraffic />} />
+            <Route path="/blog/entity-seo-explained" element={<BlogEntitySeo />} />
             <Route path="/technical-seo" element={<TechnicalSeo />} />
             <Route path="/on-page-seo" element={<OnPageSeo />} />
             <Route path="/off-page-seo" element={<OffPageSeo />} />
