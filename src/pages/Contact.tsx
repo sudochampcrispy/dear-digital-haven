@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import SeoHead from "@/components/SeoHead";
 import JsonLd, { personSchema, organizationSchema, buildBreadcrumb, buildWebPage } from "@/components/JsonLd";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import LeadGenForm from "@/components/LeadGenForm";
 
 const contactBreadcrumb = buildBreadcrumb([
   { name: "Home", url: "https://seoexpertinkarachi.com/" },
@@ -148,6 +149,15 @@ const Contact = () => (
                 About Naveed
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lead Gen Form */}
+      <section className="section-padding" aria-label="Get a free SEO quote">
+        <div className="section-container">
+          <div className="max-w-xl mx-auto">
+            <LeadGenForm />
           </div>
         </div>
       </section>
