@@ -52,7 +52,6 @@ const industries = [
   { title: "Law Firms & Legal", desc: "District courts area law firms, corporate lawyers, and legal consultants need practice-area optimization and local authority building.", link: "/law-firm-seo" },
   { title: "Restaurants & Food", desc: "Rawalpindi's famous food culture — Rajah Bazaar food streets, Saddar restaurants, and Bahria Town eateries — needs GBP optimization and local pack strategies.", link: "/restaurant-seo" },
   { title: "Construction & Contractors", desc: "Rawalpindi's construction sector serving both residential and military projects needs B2B lead generation and project portfolio SEO.", link: "/seo-services" },
-  { title: "Manufacturing & Industrial", desc: "Rawalpindi's industrial areas produce furniture, steel, and consumer goods — international and national buyers search for these manufacturers online.", link: "/manufacturing-seo" },
 ];
 
 const rawalpindiAreas = [
@@ -108,13 +107,13 @@ const SeoAgencyRawalpindi = () => (
       <section className="section-padding"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Rawalpindi Businesses</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">Comprehensive SEO engineered for Rawalpindi's dual commercial identity — traditional bazaar economy meets modern digital commerce.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Rawalpindi</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From defense contractors to wholesale markets, our industry-specific SEO strategies target Rawalpindi's highest-value commercial sectors.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding"><div className="section-container">

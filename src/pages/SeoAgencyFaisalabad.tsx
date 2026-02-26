@@ -52,7 +52,6 @@ const industries = [
   { title: "Education & Universities", desc: "GC University, UAF, NTU, and private institutions need enrollment-driven SEO targeting students across Punjab.", link: "/seo-services" },
   { title: "IT & Outsourcing", desc: "Faisalabad's growing IT sector needs SaaS SEO, portfolio optimization, and international client acquisition strategies.", link: "/saas-seo" },
   { title: "Chemical & Dye Industry", desc: "Textile chemical suppliers, dye manufacturers, and industrial chemical companies need B2B keyword targeting for national and international markets.", link: "/manufacturing-seo" },
-  { title: "Automotive & Engineering", desc: "Auto parts manufacturers, engineering workshops, and industrial equipment suppliers along GT Road need product-specific SEO and B2B lead generation.", link: "/seo-services" },
 ];
 
 const faisalabadAreas = [
@@ -108,13 +107,13 @@ const SeoAgencyFaisalabad = () => (
       <section className="section-padding"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Faisalabad</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From B2B export visibility to local service dominance — comprehensive SEO engineered for Faisalabad's dual economy.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Faisalabad</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">Faisalabad's economy spans textiles, agriculture, healthcare, and a growing IT sector. Our industry-specific strategies target the highest-value commercial opportunities.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding"><div className="section-container">

@@ -61,7 +61,6 @@ const industries = [
   { title: "Manufacturing & Textiles", desc: "B2B keyword targeting, product specification pages, and international SEO for Lahore's garment and textile manufacturing sector.", link: "/manufacturing-seo" },
   { title: "Restaurants & Hospitality", desc: "Google Business Profile optimization, menu schema, and local pack strategies for Lahore's famous food scene on MM Alam Road and Food Street.", link: "/restaurant-seo" },
   { title: "Accounting & Finance", desc: "Service page optimization, trust signals, and local SEO for accounting firms and financial advisory practices.", link: "/accounting-firm-seo" },
-  { title: "Construction & Architecture", desc: "Project portfolio optimization, local visibility for construction firms, and B2B lead generation for Lahore's building industry.", link: "/seo-services" },
 ];
 
 const lahoreAreas = [
@@ -143,7 +142,7 @@ const SeoAgencyLahore = () => (
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Comprehensive SEO Services for Lahore Businesses</h2>
           <p className="text-body max-w-3xl mx-auto mb-10 text-center">Our agency delivers full-spectrum SEO solutions engineered for Lahore's competitive digital market — from technical foundations to content authority and link equity.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}
+            {services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}
           </div>
         </div>
       </section>
@@ -165,7 +164,7 @@ const SeoAgencyLahore = () => (
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Lahore</h2>
           <p className="text-body max-w-3xl mx-auto mb-10 text-center">From Lahore's thriving real estate market to its world-famous food scene, our SEO strategies are tailored to each industry's competitive dynamics and customer acquisition patterns.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}
+            {industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}
           </div>
         </div>
       </section>
