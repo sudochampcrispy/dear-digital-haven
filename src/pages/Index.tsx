@@ -79,34 +79,43 @@ const Index = () => (
       {/* Hero */}
       <section className="section-padding surface-sunken" aria-label="Hero">
         <div className="section-container">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-4">
-              Google-Certified SEO Consultant · Karachi
-            </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold tracking-tight mb-6">
-              SEO Expert in Karachi{" "}
-              <span className="block mt-1">— Naveed Ganatra</span>
-            </h1>
-            <p className="text-lg sm:text-xl text-body max-w-2xl mb-8">
-              Achieve top Google rankings and 300%+ organic traffic growth through semantic SEO, technical optimization, and hyperlocal strategies tailored for Karachi's digital market.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/923232877850"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                Get Free SEO Audit
-                <ArrowRight className="h-4 w-4" />
-              </a>
-              <Link
-                to="/case-studies"
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
-              >
-                View Case Studies
-              </Link>
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-4">
+                Google-Certified SEO Consultant · Karachi
+              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold tracking-tight mb-6">
+                SEO Expert in Karachi{" "}
+                <span className="block mt-1">— Naveed Ganatra</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-body mb-4">
+                Achieve top Google rankings and 300%+ organic traffic growth through semantic SEO, technical optimization, and hyperlocal strategies tailored for Karachi's digital market.
+              </p>
+              <p className="text-base text-body mb-4">
+                With over a decade of hands-on experience across 27+ industries — from e-commerce and healthcare to logistics and real estate — I bring enterprise-level SEO strategies to businesses of every size in Karachi. My data-driven approach combines entity-based optimization, Core Web Vitals tuning, and bilingual keyword targeting (English &amp; Urdu) to capture the search intent that drives real revenue.
+              </p>
+              <p className="text-base text-body mb-8">
+                Whether you're a startup looking for your first page-one ranking or an established brand protecting visibility after a Google core update, I deliver transparent, measurable results — no generic playbooks, no junior account managers, just direct access to a Google-certified professional who understands Karachi's competitive landscape inside out.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://wa.me/923232877850"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                >
+                  Get Free SEO Audit
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <Link
+                  to="/case-studies"
+                  className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
+                >
+                  View Case Studies
+                </Link>
+              </div>
             </div>
+            <LeadGenForm />
           </div>
         </div>
       </section>
@@ -134,7 +143,7 @@ const Index = () => (
           <p className="text-body max-w-2xl mb-10">
             Personalized, data-driven SEO strategies to outrank competitors in Karachi's competitive landscape. My approach combines global expertise (USA, Dubai, Pakistan) with hyperlocal insights.
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="metric-card">
               <h3 className="font-semibold text-heading mb-2">Proven Results</h3>
               <p className="text-sm text-body">
@@ -246,8 +255,8 @@ const Index = () => (
       {/* FAQ */}
       <section className="section-padding surface-sunken" aria-label="Frequently asked questions">
         <div className="section-container">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-10">Frequently Asked Questions</h2>
-          <div className="max-w-3xl space-y-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto space-y-6">
             {faqData.map((f) => (
               <details key={f.q} className="group metric-card">
                 <summary className="cursor-pointer font-semibold text-heading list-none flex items-center justify-between">
@@ -257,26 +266,6 @@ const Index = () => (
                 <p className="mt-3 text-sm text-body">{f.a}</p>
               </details>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Lead Form */}
-      <section className="section-padding" aria-label="Get a free SEO quote">
-        <div className="section-container">
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Dominate Google?</h2>
-              <p className="text-body max-w-lg mb-6">
-                Get a free, no-obligation SEO analysis of your website. I'll identify quick wins and long-term opportunities to grow your organic traffic.
-              </p>
-              <ul className="space-y-3 text-sm text-body">
-                <li className="flex items-center gap-2"><span className="text-primary font-bold">✓</span> Free website audit</li>
-                <li className="flex items-center gap-2"><span className="text-primary font-bold">✓</span> Personalized strategy</li>
-                <li className="flex items-center gap-2"><span className="text-primary font-bold">✓</span> Response within 24 hours</li>
-              </ul>
-            </div>
-            <LeadGenForm />
           </div>
         </div>
       </section>
