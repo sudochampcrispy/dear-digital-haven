@@ -3,21 +3,29 @@ import { Link } from "react-router-dom";
 const SiteFooter = () => (
   <footer className="border-t surface-sunken">
     <div className="section-container section-padding">
-      <div className="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+      <div className="grid gap-x-8 gap-y-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
         {/* Brand */}
-        <div className="col-span-2 md:col-span-3 lg:col-span-1">
-          <p className="text-lg font-bold text-heading">Naveed Ganatra</p>
-          <p className="mt-2 text-sm text-body max-w-xs">
-            Google-certified SEO expert in Karachi with 10+ years of experience delivering measurable organic growth.
-          </p>
-          <a
-            href="https://wa.me/923232877850"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 mt-4 text-sm text-primary hover:text-primary/80 font-medium transition-colors"
-          >
-            WhatsApp →
-          </a>
+        <div className="col-span-2 sm:col-span-3 lg:col-span-6 pb-4 border-b border-border">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <p className="text-lg font-bold text-heading">Naveed Ganatra</p>
+              <p className="mt-1 text-sm text-body max-w-md">
+                Google-certified SEO expert in Karachi with 10+ years of experience delivering measurable organic growth.
+              </p>
+            </div>
+            <div className="flex items-center gap-4 text-sm">
+              <a href="tel:+923232877850" className="text-subtle hover:text-foreground transition-colors">+92 323 2877850</a>
+              <a href="mailto:info@seoexpertinkarachi.com" className="text-subtle hover:text-foreground transition-colors">info@seoexpertinkarachi.com</a>
+              <a
+                href="https://wa.me/923232877850"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 font-medium transition-colors"
+              >
+                WhatsApp →
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* SEO Services */}
@@ -71,18 +79,26 @@ const SiteFooter = () => (
           </ul>
         </nav>
 
-        {/* Company & Locations */}
-        <nav aria-label="Company and Locations">
+        {/* Company */}
+        <nav aria-label="Company">
           <p className="text-sm font-semibold text-heading mb-3">Company</p>
           <ul className="space-y-2 text-sm">
             <li><Link to="/about" className="text-subtle hover:text-foreground transition-colors">About</Link></li>
             <li><Link to="/seo-services" className="text-subtle hover:text-foreground transition-colors">SEO Services</Link></li>
             <li><Link to="/seo-packages" className="text-subtle hover:text-foreground transition-colors">SEO Packages</Link></li>
+            <li><Link to="/seo-consulting" className="text-subtle hover:text-foreground transition-colors">SEO Consulting</Link></li>
+            <li><Link to="/white-label-seo" className="text-subtle hover:text-foreground transition-colors">White Label SEO</Link></li>
             <li><Link to="/case-studies" className="text-subtle hover:text-foreground transition-colors">Case Studies</Link></li>
             <li><Link to="/blog" className="text-subtle hover:text-foreground transition-colors">Blog</Link></li>
             <li><Link to="/contact" className="text-subtle hover:text-foreground transition-colors">Contact</Link></li>
+            <li><Link to="/international-seo" className="text-subtle hover:text-foreground transition-colors">International SEO</Link></li>
+            <li><Link to="/website-migration-seo" className="text-subtle hover:text-foreground transition-colors">Website Migration</Link></li>
           </ul>
-          <p className="text-sm font-semibold text-heading mb-3 mt-5">Locations</p>
+        </nav>
+
+        {/* Locations */}
+        <nav aria-label="Locations">
+          <p className="text-sm font-semibold text-heading mb-3">Locations</p>
           <ul className="space-y-2 text-sm">
             <li><Link to="/seo-agency-karachi" className="text-subtle hover:text-foreground transition-colors">Karachi</Link></li>
             <li><Link to="/seo-agency-lahore" className="text-subtle hover:text-foreground transition-colors">Lahore</Link></li>
@@ -90,19 +106,16 @@ const SiteFooter = () => (
             <li><Link to="/seo-agency-rawalpindi" className="text-subtle hover:text-foreground transition-colors">Rawalpindi</Link></li>
             <li><Link to="/seo-agency-faisalabad" className="text-subtle hover:text-foreground transition-colors">Faisalabad</Link></li>
             <li><Link to="/seo-agency-multan" className="text-subtle hover:text-foreground transition-colors">Multan</Link></li>
+            <li><Link to="/seo-agency-gujranwala" className="text-subtle hover:text-foreground transition-colors">Gujranwala</Link></li>
+            <li><Link to="/seo-agency-hyderabad" className="text-subtle hover:text-foreground transition-colors">Hyderabad</Link></li>
             <li><Link to="/seo-agency-peshawar" className="text-subtle hover:text-foreground transition-colors">Peshawar</Link></li>
             <li><Link to="/seo-agency-quetta" className="text-subtle hover:text-foreground transition-colors">Quetta</Link></li>
           </ul>
         </nav>
       </div>
 
-      <div className="mt-10 pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-subtle">
+      <div className="mt-10 pt-6 border-t text-center text-xs text-subtle">
         <p>© {new Date().getFullYear()} Naveed Ganatra — SEO Expert in Karachi. All rights reserved.</p>
-        <div className="flex items-center gap-4">
-          <a href="tel:+923232877850" className="hover:text-foreground transition-colors">+92 323 2877850</a>
-          <span className="text-border">·</span>
-          <a href="mailto:info@seoexpertinkarachi.com" className="hover:text-foreground transition-colors">info@seoexpertinkarachi.com</a>
-        </div>
       </div>
     </div>
   </footer>
