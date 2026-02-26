@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChevronDown, ArrowRight, Search, Globe, BarChart3, Zap, ShieldCheck, TrendingUp, FileSearch, Layers, Target, CheckCircle2, Wrench, MapPin } from "lucide-react";
+import { ArrowRight, Search, Globe, BarChart3, Zap, ShieldCheck, TrendingUp, FileSearch, Layers, Target, CheckCircle2, Wrench, MapPin } from "lucide-react";
 import Layout from "@/components/Layout";
 import SeoHead from "@/components/SeoHead";
 import JsonLd, { organizationSchema, buildBreadcrumb, buildWebPage } from "@/components/JsonLd";
@@ -454,21 +454,18 @@ const SeoAgencyKarachi = () => (
       </section>
 
       {/* ═══ FAQ ═══ */}
-      <section className="section-padding" aria-label="Frequently asked questions">
-        <div className="section-container max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Frequently Asked Questions About Our SEO Agency</h2>
-          <p className="text-body text-center mb-8">
-            Common questions businesses in Karachi ask before hiring an SEO agency.
-          </p>
-          {faqData.map((faq) => (
-            <details key={faq.q} className="group border-b py-4">
-              <summary className="cursor-pointer font-medium text-heading flex items-center justify-between">
-                {faq.q}
-                <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180 text-muted-foreground shrink-0 ml-4" />
-              </summary>
-              <p className="mt-3 text-body text-sm">{faq.a}</p>
-            </details>
-          ))}
+      <section className="section-padding surface-sunken" aria-label="Frequently asked questions">
+        <div className="section-container">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Frequently Asked Questions About SEO in Karachi</h2>
+          <p className="text-body max-w-3xl mx-auto mb-10 text-center">Get answers to the most common questions about SEO services, pricing, timelines, and methodology. If your question isn't listed here, feel free to reach out via WhatsApp for a direct response.</p>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqData.map((faq) => (
+              <details key={faq.q} className="group metric-card">
+                <summary className="cursor-pointer font-semibold text-heading list-none flex items-center justify-between">{faq.q}<span className="ml-4 text-primary text-xl group-open:rotate-45 transition-transform shrink-0">+</span></summary>
+                <p className="mt-3 text-sm text-body leading-relaxed">{faq.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

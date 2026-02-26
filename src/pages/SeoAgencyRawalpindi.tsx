@@ -131,7 +131,7 @@ const SeoAgencyRawalpindi = () => (
         <div className="flex flex-wrap justify-center gap-3">{tools.map((tool) => (<span key={tool} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading"><Wrench className="h-3.5 w-3.5 text-primary mr-2" />{tool}</span>))}</div>
       </div></div></section>
 
-      <section className="section-padding"><div className="section-container">
+      <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Frequently Asked Questions About SEO in Rawalpindi</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">Common questions from Rawalpindi businesses about SEO services and twin-city optimization.</p>
         <div className="max-w-3xl mx-auto space-y-4">{faqData.map((f) => (<details key={f.q} className="group metric-card"><summary className="cursor-pointer font-semibold text-heading list-none flex items-center justify-between">{f.q}<span className="ml-4 text-primary text-xl group-open:rotate-45 transition-transform shrink-0">+</span></summary><p className="mt-3 text-sm text-body leading-relaxed">{f.a}</p></details>))}</div>
