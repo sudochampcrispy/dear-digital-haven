@@ -250,13 +250,15 @@ const Index = () => (
       {/* Services Overview */}
       <section className="section-padding surface-sunken" aria-label="SEO services in Karachi">
         <div className="section-container">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Comprehensive SEO Services in Karachi</h2>
-          <p className="text-body max-w-3xl mb-4">
-            From technical foundations to content strategy and link building, I offer the full spectrum of SEO services tailored for Karachi's bilingual, mobile-first search ecosystem. Each service is designed to work as part of an integrated strategy — not isolated tactics.
-          </p>
-          <p className="text-body max-w-3xl mb-10">
-            Whether you need a complete SEO overhaul or targeted improvements in specific areas, my services scale to match your business goals, budget, and competitive landscape.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Comprehensive SEO Services in Karachi</h2>
+            <p className="text-body mb-4">
+              From technical foundations to content strategy and link building, I offer the full spectrum of SEO services tailored for Karachi's bilingual, mobile-first search ecosystem. Each service is designed to work as part of an integrated strategy — not isolated tactics.
+            </p>
+            <p className="text-body">
+              Whether you need a complete SEO overhaul or targeted improvements in specific areas, my services scale to match your business goals, budget, and competitive landscape.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
               <Link key={s.title} to={s.link} className="metric-card group">
@@ -301,13 +303,15 @@ const Index = () => (
       {/* Industries */}
       <section className="section-padding surface-sunken" aria-label="Industries served">
         <div className="section-container">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Industries I Serve in Karachi & Beyond</h2>
-          <p className="text-body max-w-3xl mb-4">
-            Every industry has unique search patterns, competition dynamics, and customer acquisition challenges. I develop industry-specific SEO strategies that account for your market's particular keyword landscape, seasonal trends, and buyer journey — not one-size-fits-all templates.
-          </p>
-          <p className="text-body max-w-3xl mb-10">
-            With 27+ industries served, I bring cross-industry insights that help identify untapped opportunities and avoid common pitfalls specific to your vertical.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Industries I Serve in Karachi & Beyond</h2>
+            <p className="text-body mb-4">
+              Every industry has unique search patterns, competition dynamics, and customer acquisition challenges. I develop industry-specific SEO strategies that account for your market's particular keyword landscape, seasonal trends, and buyer journey — not one-size-fits-all templates.
+            </p>
+            <p className="text-body">
+              With 27+ industries served, I bring cross-industry insights that help identify untapped opportunities and avoid common pitfalls specific to your vertical.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {industries.map((ind) => (
               <Link key={ind.title} to={ind.link} className="metric-card group">
@@ -342,10 +346,12 @@ const Index = () => (
       {/* Success Stories */}
       <section className="section-padding surface-sunken" aria-label="Client testimonials and success stories">
         <div className="section-container">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Client Testimonials & Success Stories</h2>
-          <p className="text-body max-w-3xl mb-10">
-            Real results from real businesses. These testimonials reflect the measurable impact of data-driven SEO — not vanity metrics, but revenue growth, lead generation, and market dominance.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Client Testimonials & Success Stories</h2>
+            <p className="text-body">
+              Real results from real businesses. These testimonials reflect the measurable impact of data-driven SEO — not vanity metrics, but revenue growth, lead generation, and market dominance.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {testimonials.map((t) => (
               <article key={t.name} className="metric-card">
@@ -434,14 +440,16 @@ const Index = () => (
       {/* Local SEO Karachi Areas */}
       <section className="section-padding surface-sunken" aria-label="Areas served in Karachi">
         <div className="section-container">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Local SEO Services Across Karachi</h2>
-          <p className="text-body max-w-3xl mb-4">
-            Karachi is a city of diverse neighborhoods, each with unique search patterns and commercial opportunities. My local SEO strategies target specific areas with neighborhood-level landing pages, localized Google Business Profile optimization, and geo-targeted content that captures "near me" and area-specific search queries.
-          </p>
-          <p className="text-body max-w-3xl mb-8">
-            From the commercial hubs of Saddar and Shahrah-e-Faisal to the residential markets of DHA, Clifton, and Gulshan-e-Iqbal — I help businesses dominate local search results in every corner of Karachi.
-          </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Local SEO Services Across Karachi</h2>
+            <p className="text-body mb-4">
+              Karachi is a city of diverse neighborhoods, each with unique search patterns and commercial opportunities. My local SEO strategies target specific areas with neighborhood-level landing pages, localized Google Business Profile optimization, and geo-targeted content that captures "near me" and area-specific search queries.
+            </p>
+            <p className="text-body">
+              From the commercial hubs of Saddar and Shahrah-e-Faisal to the residential markets of DHA, Clifton, and Gulshan-e-Iqbal — I help businesses dominate local search results in every corner of Karachi.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
             {karachiAreas.map((area) => (
               <span key={area} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading">
                 <MapPin className="h-3.5 w-3.5 text-primary mr-2" />
@@ -449,7 +457,7 @@ const Index = () => (
               </span>
             ))}
           </div>
-          <div className="mt-8">
+          <div className="mt-8 text-center">
             <Link
               to="/local-seo-karachi"
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
@@ -498,10 +506,12 @@ const Index = () => (
       {/* Blog Teaser */}
       <section className="section-padding surface-sunken" aria-label="Latest SEO insights">
         <div className="section-container">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Latest SEO Insights & Resources</h2>
-          <p className="text-body max-w-3xl mb-10">
-            Stay ahead of the curve with actionable SEO guides, algorithm update analyses, and proven strategies from my work with businesses across Pakistan and international markets.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Latest SEO Insights & Resources</h2>
+            <p className="text-body">
+              Stay ahead of the curve with actionable SEO guides, algorithm update analyses, and proven strategies from my work with businesses across Pakistan and international markets.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.map((post) => (
               <Link key={post.link} to={post.link} className="metric-card group">
