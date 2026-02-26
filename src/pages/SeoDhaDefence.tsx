@@ -202,25 +202,36 @@ const SeoDhaDefence = () => (
       <section className="section-padding surface-sunken" aria-label="Industries in DHA">
         <div className="section-container">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-3xl font-bold mb-4">Industries I Work With in DHA Defence</h2>
+            <h2 className="text-3xl font-bold mb-4">Industries I Can Help in DHA Defence</h2>
             <p className="text-body">
-              DHA has virtually every type of business — and each one has a different set of customers searching in different ways. Here's how I help:
+              DHA is home to some of Karachi's most competitive business categories. Whether you're already established or just starting out, here's how SEO can bring more customers to your door.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: "Restaurants & Cafés", desc: "Help customers find your restaurant when they search 'best biryani Bukhari Commercial' or 'café near Zamzama.' Menu pages, Google Maps visibility, and reviews." },
-              { title: "Doctors & Clinics", desc: "Get found by patients searching for specialists in DHA — dermatologists, dentists, physiotherapists. Trustworthy content that Google and patients both value." },
-              { title: "Real Estate", desc: "Rank for DHA property searches — plots, houses, apartments. Phase-specific listings that match what buyers and renters are actually looking for." },
-              { title: "Gyms & Fitness", desc: "Show up when DHA residents search for gyms, personal trainers, or fitness classes near their phase. Google Maps and class-based content." },
-              { title: "Salons & Beauty", desc: "Stand out in DHA's competitive beauty market. Service pages, before-after content, and Google Business Profile management." },
-              { title: "IT & Software Companies", desc: "Generate leads for DHA-based tech companies — whether targeting local clients or international markets through organic search." },
-            ].map((ind) => (
-              <div key={ind.title} className="metric-card">
-                <h3 className="font-semibold text-heading mb-2">{ind.title}</h3>
-                <p className="text-sm text-body">{ind.desc}</p>
-              </div>
-            ))}
+          <div className="relative">
+            <div className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-primary/20 scrollbar-track-transparent -mx-4 px-4">
+              {[
+                { title: "Real Estate Agencies", desc: "DHA property is high-value. Buyers and renters search by phase, plot size, and property type. Ranking for these queries means connecting with serious, high-ticket prospects." },
+                { title: "Specialist Doctors & Clinics", desc: "Dermatologists, cardiologists, dentists — patients in DHA search for trusted specialists near their phase. The right content builds both Google trust and patient confidence." },
+                { title: "Law Firms & Legal Services", desc: "Corporate law, family law, property disputes — DHA residents look for reputable lawyers online. Professional service pages and trust signals make all the difference." },
+                { title: "Interior Design & Architecture", desc: "DHA homeowners invest heavily in interiors. Searches like 'interior designer DHA Karachi' are high-intent with significant project values." },
+                { title: "Private Schools & Tutoring", desc: "Parents in DHA actively search for schools, O/A-level academies, and private tutors by phase. Education-focused SEO captures these high-intent family searches." },
+                { title: "Restaurants & Cafés", desc: "From Bukhari Commercial to Zamzama, DHA's dining scene is massive. When someone searches 'best café near Zamzama,' your restaurant needs to be the answer." },
+                { title: "Car Dealerships & Auto Services", desc: "Luxury car showrooms, workshops, and detailing services along Khayaban-e-Ittehad serve a premium market searching for trusted automotive services." },
+                { title: "Gyms & Fitness Studios", desc: "DHA residents are health-conscious and search for gyms, CrossFit, yoga, and personal trainers near their phase. Google Maps visibility is key." },
+                { title: "Salons & Beauty Studios", desc: "The beauty market in DHA is crowded. Standing out on Google means showing up when someone searches 'best salon DHA Phase 6' — not buried on page two." },
+                { title: "IT Companies & Software Houses", desc: "DHA hosts a growing tech ecosystem. B2B lead generation through organic search helps software companies find clients locally and internationally." },
+                { title: "Pharmacies & Labs", desc: "Diagnostic labs and pharmacies in DHA compete on convenience and trust. Ranking for 'lab test near DHA' or 'pharmacy Khayaban-e-Shahbaz' drives walk-ins." },
+                { title: "Fashion Boutiques & Retail", desc: "DHA's shopping streets are packed with boutiques. Online visibility turns casual browsers into in-store customers — especially around seasonal collections." },
+                { title: "Event Planners & Wedding Services", desc: "DHA's affluent market drives demand for premium event planning, catering, and wedding services. Ranking for these searches means high-value bookings." },
+                { title: "Pet Care & Veterinary", desc: "Pet ownership in DHA is growing fast. Vet clinics, groomers, and pet stores can capture a loyal customer base through local search visibility." },
+              ].map((ind) => (
+                <div key={ind.title} className="metric-card min-w-[300px] sm:min-w-[340px] snap-start shrink-0">
+                  <h3 className="font-semibold text-heading mb-2">{ind.title}</h3>
+                  <p className="text-sm text-body">{ind.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-2 text-center text-xs text-subtle">Scroll to see more →</div>
           </div>
         </div>
       </section>
