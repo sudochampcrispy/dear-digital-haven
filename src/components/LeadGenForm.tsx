@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { useLocation } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -9,6 +10,7 @@ function generateCode(): string {
 }
 
 const LeadGenForm = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,7 +53,7 @@ const LeadGenForm = () => {
           "Content-Type": "application/json",
           apikey: supabaseKey,
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, pageUrl: window.location.origin + location.pathname }),
       });
       const data = await res.json();
       if (!res.ok || data.error) throw new Error(data.error || "Send failed");
