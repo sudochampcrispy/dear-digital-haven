@@ -61,7 +61,6 @@ const industries = [
   { title: "Diplomatic & NGO Sector", desc: "International organizations, embassies, and NGOs headquartered in Islamabad need multilingual SEO and global visibility strategies.", link: "/international-seo" },
   { title: "Construction & Architecture", desc: "Islamabad's construction boom — new sectors, housing societies, and commercial projects — creates massive demand for contractor and architectural firm SEO.", link: "/seo-services" },
   { title: "Restaurants & Fine Dining", desc: "Islamabad's growing food scene in F-7 Markaz, F-6, and Saidpur Village demands Google Business Profile optimization, review management, and local pack strategies.", link: "/restaurant-seo" },
-  { title: "E-commerce & Retail", desc: "Online retail optimization for Islamabad-based stores competing nationally, with product SEO, category architecture, and structured data.", link: "/ecommerce-seo" },
 ];
 
 const islamabadAreas = [
@@ -124,7 +123,7 @@ const SeoAgencyIslamabad = () => (
         <div className="section-container">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Islamabad Businesses</h2>
           <p className="text-body max-w-3xl mx-auto mb-10 text-center">Full-spectrum SEO engineered for Islamabad's corporate market — from <Link to="/technical-seo" className="text-primary hover:underline">technical foundations</Link> to <Link to="/content-strategy-seo" className="text-primary hover:underline">content authority</Link> and link equity.</p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
         </div>
       </section>
 
@@ -140,7 +139,7 @@ const SeoAgencyIslamabad = () => (
         <div className="section-container">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Islamabad</h2>
           <p className="text-body max-w-3xl mx-auto mb-10 text-center">Islamabad's economy is driven by technology, government, and corporate services. Our industry-specific SEO strategies target the sectors that define the capital's commercial landscape.</p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
         </div>
       </section>
 

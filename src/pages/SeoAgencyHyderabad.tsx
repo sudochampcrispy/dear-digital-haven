@@ -52,7 +52,6 @@ const industries = [
   { title: "Law Firms & Legal Services", desc: "District courts area lawyers, corporate attorneys, and legal consultants need practice-area optimization and local authority building.", link: "/law-firm-seo" },
   { title: "IT & Technology", desc: "MUET-aligned tech startups and IT companies in Hyderabad's growing tech ecosystem need SaaS SEO and international client acquisition strategies.", link: "/saas-seo" },
   { title: "Restaurants & Food Culture", desc: "Hyderabad's famous food scene — Sindhi cuisine restaurants, sweet shops, and food businesses — needs GBP optimization and local pack strategies.", link: "/restaurant-seo" },
-  { title: "Agriculture & Farming", desc: "Sindh's agricultural sector, including cotton, wheat, and rice businesses, needs B2B SEO for national and international market access.", link: "/international-seo" },
 ];
 
 const hyderabadAreas = [
@@ -108,13 +107,13 @@ const SeoAgencyHyderabad = () => (
       <section className="section-padding"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Hyderabad</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">Trilingual SEO engineered for Hyderabad's unique cultural and educational economy.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Hyderabad</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From universities to handicraft workshops — industry-specific SEO for Hyderabad's distinctive economic landscape.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding"><div className="section-container">

@@ -52,7 +52,6 @@ const industries = [
   { title: "Blue Pottery & Handicrafts", desc: "Multan's world-famous blue pottery and handicraft artisans need e-commerce SEO and international visibility to reach global buyers and cultural tourists.", link: "/ecommerce-seo" },
   { title: "Law Firms & Legal Services", desc: "District courts area law firms and corporate lawyers need practice-area optimization and local authority building.", link: "/law-firm-seo" },
   { title: "Restaurants & Food", desc: "Multan's famous Sohan Halwa, Multani cuisine restaurants, and food businesses need GBP optimization and local pack strategies.", link: "/restaurant-seo" },
-  { title: "Energy & Solar", desc: "South Punjab's growing solar energy sector and energy companies need B2B SEO for commercial and residential client acquisition.", link: "/seo-services" },
 ];
 
 const multanAreas = [
@@ -108,13 +107,13 @@ const SeoAgencyMultan = () => (
       <section className="section-padding"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Multan Businesses</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From export visibility to local dominance — comprehensive SEO tailored for Multan's agricultural economy and growing service sector.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Multan</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From world-famous mangoes to blue pottery, our industry-specific SEO strategies target Multan's highest-value commercial opportunities.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding"><div className="section-container">

@@ -52,7 +52,6 @@ const industries = [
   { title: "Healthcare & Medical", desc: "Hospitals, specialist clinics, and diagnostic centers need patient acquisition SEO with YMYL-compliant content and medical schema.", link: "/dental-seo" },
   { title: "Education & Coaching", desc: "GIFT University, UOG, and private institutions need enrollment-driven SEO targeting students across Punjab.", link: "/seo-services" },
   { title: "Automotive & Engineering", desc: "Auto parts manufacturers, welding equipment suppliers, and engineering workshops need product-specific B2B search visibility.", link: "/seo-services" },
-  { title: "IT & Freelancing", desc: "Gujranwala's growing IT and freelancing community needs portfolio SEO, SaaS optimization, and international client acquisition.", link: "/saas-seo" },
 ];
 
 const gujranwalaAreas = [
@@ -108,13 +107,13 @@ const SeoAgencyGujranwala = () => (
       <section className="section-padding"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Gujranwala</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From B2B export visibility to local service dominance — SEO engineered for Gujranwala's manufacturing economy.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Gujranwala</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From ceramics factories to rice mills — industry-specific SEO for Gujranwala's highest-value commercial sectors.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding"><div className="section-container">

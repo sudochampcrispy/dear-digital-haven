@@ -52,7 +52,6 @@ const industries = [
   { title: "Tourism & Hospitality", desc: "Ziarat's juniper forests, Bolan Pass, Hanna Lake, and Quetta's pleasant climate attract growing tourist numbers. Hotels, tour operators, and heritage businesses need destination SEO.", link: "/seo-services" },
   { title: "Construction & Marble", desc: "Balochistan's marble and granite industry — quarries, processing plants, and exporters — needs B2B SEO for construction buyers searching for premium Pakistani stone.", link: "/manufacturing-seo" },
   { title: "Government & NGO Sector", desc: "International NGOs, development organizations, and government contractors operating in Balochistan need visibility for institutional and project-related search queries.", link: "/seo-services" },
-  { title: "Agriculture & Livestock", desc: "Balochistan's agricultural sector — dates, saffron, livestock — serves national and international markets. Product-specific SEO helps reach buyers beyond traditional trade channels.", link: "/international-seo" },
 ];
 
 const quettaAreas = [
@@ -108,13 +107,13 @@ const SeoAgencyQuetta = () => (
       <section className="section-padding"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">SEO Services for Quetta</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From mining B2B visibility to local service optimization — SEO engineered for Balochistan's resource-rich economy.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body mb-3">{s.desc}</p><Link to={s.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{services.map((s) => (<div key={s.title} className="metric-card"><div className="flex items-center gap-3 mb-3"><s.icon className="h-5 w-5 text-primary shrink-0" /><h3 className="font-semibold text-heading">{s.title}</h3></div><p className="text-sm text-body">{s.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding surface-sunken"><div className="section-container">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Industries We Serve in Quetta</h2>
         <p className="text-body max-w-3xl mx-auto mb-10 text-center">From mining giants to apple orchards — industry-specific SEO for Balochistan's unique economic landscape.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body mb-3">{ind.desc}</p><Link to={ind.link} className="text-sm text-primary hover:underline">Learn more →</Link></div>))}</div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">{industries.map((ind) => (<div key={ind.title} className="metric-card"><h3 className="font-semibold text-heading mb-2">{ind.title}</h3><p className="text-sm text-body">{ind.desc}</p></div>))}</div>
       </div></section>
 
       <section className="section-padding"><div className="section-container">
