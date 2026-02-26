@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import SeoHead from "@/components/SeoHead";
 import JsonLd, { personSchema, organizationSchema, websiteSchema, siteNavigationSchema, buildBreadcrumb, buildWebPage } from "@/components/JsonLd";
 import CtaBanner from "@/components/CtaBanner";
+import LeadGenForm from "@/components/LeadGenForm";
 import { ArrowRight, BarChart3, Search, Globe, Zap, ShieldCheck, TrendingUp } from "lucide-react";
 
 const stats = [
@@ -256,6 +257,26 @@ const Index = () => (
                 <p className="mt-3 text-sm text-body">{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lead Form */}
+      <section className="section-padding" aria-label="Get a free SEO quote">
+        <div className="section-container">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Dominate Google?</h2>
+              <p className="text-body max-w-lg mb-6">
+                Get a free, no-obligation SEO analysis of your website. I'll identify quick wins and long-term opportunities to grow your organic traffic.
+              </p>
+              <ul className="space-y-3 text-sm text-body">
+                <li className="flex items-center gap-2"><span className="text-primary font-bold">✓</span> Free website audit</li>
+                <li className="flex items-center gap-2"><span className="text-primary font-bold">✓</span> Personalized strategy</li>
+                <li className="flex items-center gap-2"><span className="text-primary font-bold">✓</span> Response within 24 hours</li>
+              </ul>
+            </div>
+            <LeadGenForm />
           </div>
         </div>
       </section>
