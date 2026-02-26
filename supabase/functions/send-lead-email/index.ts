@@ -12,7 +12,7 @@ Deno.serve(async (req) => {
   }
 
   try {
-    const { name, email, whatsapp, needsSeo, website } = await req.json();
+    const { name, email, whatsapp, needsSeo, website, pageUrl } = await req.json();
 
     // Validate
     if (!name || !email || !whatsapp || !website || !needsSeo) {
@@ -63,9 +63,9 @@ Deno.serve(async (req) => {
           <tr><td style="padding:8px 12px;font-weight:bold;color:#333;">WhatsApp</td><td style="padding:8px 12px;color:#555;">${escapeHtml(whatsapp)}</td></tr>
           <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:bold;color:#333;">Needs SEO Services</td><td style="padding:8px 12px;color:#555;">${escapeHtml(needsSeo)}</td></tr>
           <tr><td style="padding:8px 12px;font-weight:bold;color:#333;">Website URL</td><td style="padding:8px 12px;color:#555;">${escapeHtml(website)}</td></tr>
+          <tr style="background:#f9f9f9;"><td style="padding:8px 12px;font-weight:bold;color:#333;">Submitted From Page</td><td style="padding:8px 12px;color:#555;">${escapeHtml(pageUrl || "Unknown")}</td></tr>
         </table>
-        <p style="margin-top:20px;font-size:12px;color:#999;">Sent from seoexpertinkarachi.com lead form</p>
-      </div>
+      <p style="margin-top:20px;font-size:12px;color:#999;">Sent from seoexpertinkarachi.com lead form</p>
     `;
 
     await client.send({
