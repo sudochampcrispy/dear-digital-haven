@@ -82,6 +82,23 @@ const SeoTariqRoad = lazy(() => import("./pages/SeoTariqRoad"));
 const SeoBahadurabad = lazy(() => import("./pages/SeoBahadurabad"));
 const SeoShahrahEFaisal = lazy(() => import("./pages/SeoShahrahEFaisal"));
 const SeoScheme33 = lazy(() => import("./pages/SeoScheme33"));
+const ConstructionSeo = lazy(() => import("./pages/ConstructionSeo"));
+const ArchitectureFirmSeo = lazy(() => import("./pages/ArchitectureFirmSeo"));
+const EngineeringConsultantSeo = lazy(() => import("./pages/EngineeringConsultantSeo"));
+const LogisticsCompanySeo = lazy(() => import("./pages/LogisticsCompanySeo"));
+const FreightForwardingSeo = lazy(() => import("./pages/FreightForwardingSeo"));
+const ExportCompanySeo = lazy(() => import("./pages/ExportCompanySeo"));
+const TextileCompanySeo = lazy(() => import("./pages/TextileCompanySeo"));
+const GarmentManufacturerSeo = lazy(() => import("./pages/GarmentManufacturerSeo"));
+const OilGasServicesSeo = lazy(() => import("./pages/OilGasServicesSeo"));
+const IndustrialEquipmentSeo = lazy(() => import("./pages/IndustrialEquipmentSeo"));
+const CybersecurityCompanySeo = lazy(() => import("./pages/CybersecurityCompanySeo"));
+const FintechCompanySeo = lazy(() => import("./pages/FintechCompanySeo"));
+const AiCompanySeo = lazy(() => import("./pages/AiCompanySeo"));
+const BlockchainCompanySeo = lazy(() => import("./pages/BlockchainCompanySeo"));
+const EnterpriseItCompanySeo = lazy(() => import("./pages/EnterpriseItCompanySeo"));
+const ErpSolutionProviderSeo = lazy(() => import("./pages/ErpSolutionProviderSeo"));
+const CloudServicesCompanySeo = lazy(() => import("./pages/CloudServicesCompanySeo"));
 
 const queryClient = new QueryClient();
 
@@ -169,6 +186,23 @@ const App = () => (
             <Route path="/bahadurabad" element={<SeoBahadurabad />} />
             <Route path="/shahrah-e-faisal" element={<SeoShahrahEFaisal />} />
             <Route path="/scheme-33" element={<SeoScheme33 />} />
+            <Route path="/construction-company-seo" element={<ConstructionSeo />} />
+            <Route path="/architecture-firm-seo" element={<ArchitectureFirmSeo />} />
+            <Route path="/engineering-consultant-seo" element={<EngineeringConsultantSeo />} />
+            <Route path="/logistics-company-seo" element={<LogisticsCompanySeo />} />
+            <Route path="/freight-forwarding-seo" element={<FreightForwardingSeo />} />
+            <Route path="/export-company-seo" element={<ExportCompanySeo />} />
+            <Route path="/textile-company-seo" element={<TextileCompanySeo />} />
+            <Route path="/garment-manufacturer-seo" element={<GarmentManufacturerSeo />} />
+            <Route path="/oil-gas-services-seo" element={<OilGasServicesSeo />} />
+            <Route path="/industrial-equipment-supplier-seo" element={<IndustrialEquipmentSeo />} />
+            <Route path="/cybersecurity-company-seo" element={<CybersecurityCompanySeo />} />
+            <Route path="/fintech-company-seo" element={<FintechCompanySeo />} />
+            <Route path="/ai-company-seo" element={<AiCompanySeo />} />
+            <Route path="/blockchain-company-seo" element={<BlockchainCompanySeo />} />
+            <Route path="/enterprise-it-company-seo" element={<EnterpriseItCompanySeo />} />
+            <Route path="/erp-solution-provider-seo" element={<ErpSolutionProviderSeo />} />
+            <Route path="/cloud-services-company-seo" element={<CloudServicesCompanySeo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
