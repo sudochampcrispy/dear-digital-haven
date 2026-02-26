@@ -113,10 +113,12 @@ const SeoDhaDefence = () => (
       {/* Why DHA Needs This */}
       <section className="section-padding" aria-label="Why DHA businesses struggle on Google">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">Why Most DHA Businesses Struggle on Google</h2>
-          <p className="text-body max-w-3xl mb-6">
-            DHA Defence has Karachi's highest concentration of premium businesses — and the highest concentration of competition. Residents here have high spending power and search for services by phase, street name, or landmark. If your online presence isn't optimized for those specific searches, you're invisible to the exact customers who would pay the most for what you offer.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">Why Most DHA Businesses Struggle on Google</h2>
+            <p className="text-body">
+              DHA Defence has Karachi's highest concentration of premium businesses — and the highest concentration of competition. Residents here have high spending power and search for services by phase, street name, or landmark. If your online presence isn't optimized for those specific searches, you're invisible to the exact customers who would pay the most for what you offer.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="metric-card text-center">
               <p className="stat-number text-3xl">8</p>
@@ -141,10 +143,12 @@ const SeoDhaDefence = () => (
       {/* Areas I Cover */}
       <section className="section-padding surface-sunken" aria-label="Areas in DHA">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">Areas in DHA Defence I Cover</h2>
-          <p className="text-body max-w-3xl mb-8">
-            Every commercial zone in DHA has a different customer base and different search patterns. I build content and optimize your presence around the specific areas where your customers are.
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">Areas in DHA Defence I Cover</h2>
+            <p className="text-body">
+              Every commercial zone in DHA has a different customer base and different search patterns. I build content and optimize your presence around the specific areas where your customers are.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { name: "Bukhari Commercial", desc: "One of DHA's busiest food and retail streets in Phase 6. Restaurants, fashion outlets, and salons here face fierce competition — standing out on Google is essential." },
@@ -168,10 +172,12 @@ const SeoDhaDefence = () => (
       {/* What You Get */}
       <section className="section-padding" aria-label="What you get">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">What You Get When You Work With Me</h2>
-          <p className="text-body max-w-3xl mb-8">
-            Everything I do is built around getting your DHA business in front of the right people at the right time. Here's what's included:
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">What You Get When You Work With Me</h2>
+            <p className="text-body">
+              Everything I do is built around getting your DHA business in front of the right people at the right time. Here's what's included:
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               "Keyword research focused on DHA-specific searches — by phase, street, and landmark",
@@ -195,10 +201,12 @@ const SeoDhaDefence = () => (
       {/* Industries */}
       <section className="section-padding surface-sunken" aria-label="Industries in DHA">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-4">Industries I Work With in DHA Defence</h2>
-          <p className="text-body max-w-3xl mb-8">
-            DHA has virtually every type of business — and each one has a different set of customers searching in different ways. Here's how I help:
-          </p>
+          <div className="text-center max-w-4xl mx-auto mb-10">
+            <h2 className="text-3xl font-bold mb-4">Industries I Work With in DHA Defence</h2>
+            <p className="text-body">
+              DHA has virtually every type of business — and each one has a different set of customers searching in different ways. Here's how I help:
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Restaurants & Cafés", desc: "Help customers find your restaurant when they search 'best biryani Bukhari Commercial' or 'café near Zamzama.' Menu pages, Google Maps visibility, and reviews." },
@@ -220,8 +228,8 @@ const SeoDhaDefence = () => (
       {/* FAQ */}
       <section className="section-padding" aria-label="FAQs">
         <div className="section-container">
-          <h2 className="text-3xl font-bold mb-10">Frequently Asked Questions</h2>
-          <div className="max-w-4xl space-y-6">
+          <h2 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+          <div className="max-w-4xl mx-auto space-y-6">
             {faqData.map((f) => (
               <details key={f.q} className="group metric-card">
                 <summary className="cursor-pointer font-semibold text-heading list-none flex items-center justify-between">
