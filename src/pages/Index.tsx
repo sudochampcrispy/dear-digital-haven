@@ -52,9 +52,21 @@ const tools = [
 ];
 
 const karachiAreas = [
-  "DHA Defence", "Clifton", "Gulshan-e-Iqbal", "PECHS", "North Nazimabad",
-  "Gulistan-e-Johar", "Saddar", "Korangi", "Malir", "Nazimabad",
-  "FB Area", "Tariq Road", "Bahadurabad", "Shahrah-e-Faisal", "Scheme 33",
+  { name: "DHA Defence", link: "/dha-defence" },
+  { name: "Clifton", link: "/clifton" },
+  { name: "Gulshan-e-Iqbal", link: "/gulshan-e-iqbal" },
+  { name: "PECHS", link: "/pechs" },
+  { name: "North Nazimabad", link: "/north-nazimabad" },
+  { name: "Gulistan-e-Johar", link: "/gulistan-e-johar" },
+  { name: "Saddar", link: "/saddar" },
+  { name: "Korangi", link: "/korangi" },
+  { name: "Malir", link: "/malir" },
+  { name: "Nazimabad", link: "/nazimabad" },
+  { name: "FB Area", link: "/fb-area" },
+  { name: "Tariq Road", link: "/tariq-road" },
+  { name: "Bahadurabad", link: "/bahadurabad" },
+  { name: "Shahrah-e-Faisal", link: "/shahrah-e-faisal" },
+  { name: "Scheme 33", link: "/scheme-33" },
 ];
 
 const testimonials = [
@@ -451,10 +463,10 @@ const Index = () => (
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {karachiAreas.map((area) => (
-              <span key={area} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading">
+              <Link key={area.name} to={area.link} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading hover:text-primary transition-colors">
                 <MapPin className="h-3.5 w-3.5 text-primary mr-2" />
-                {area}
-              </span>
+                {area.name}
+              </Link>
             ))}
           </div>
           <div className="mt-8 text-center">

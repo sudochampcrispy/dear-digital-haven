@@ -65,6 +65,11 @@ const SeoAgencyGujranwala = lazy(() => import("./pages/SeoAgencyGujranwala"));
 const SeoAgencyHyderabad = lazy(() => import("./pages/SeoAgencyHyderabad"));
 const SeoAgencyPeshawar = lazy(() => import("./pages/SeoAgencyPeshawar"));
 const SeoAgencyQuetta = lazy(() => import("./pages/SeoAgencyQuetta"));
+const SeoDhaDefence = lazy(() => import("./pages/SeoDhaDefence"));
+const SeoClifton = lazy(() => import("./pages/SeoClifton"));
+const SeoGulshanEIqbal = lazy(() => import("./pages/SeoGulshanEIqbal"));
+const SeoPechs = lazy(() => import("./pages/SeoPechs"));
+const SeoNorthNazimabad = lazy(() => import("./pages/SeoNorthNazimabad"));
 
 const queryClient = new QueryClient();
 
@@ -135,6 +140,11 @@ const App = () => (
             <Route path="/seo-agency-hyderabad" element={<SeoAgencyHyderabad />} />
             <Route path="/seo-agency-peshawar" element={<SeoAgencyPeshawar />} />
             <Route path="/seo-agency-quetta" element={<SeoAgencyQuetta />} />
+            <Route path="/dha-defence" element={<SeoDhaDefence />} />
+            <Route path="/clifton" element={<SeoClifton />} />
+            <Route path="/gulshan-e-iqbal" element={<SeoGulshanEIqbal />} />
+            <Route path="/pechs" element={<SeoPechs />} />
+            <Route path="/north-nazimabad" element={<SeoNorthNazimabad />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
