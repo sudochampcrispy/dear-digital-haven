@@ -124,6 +124,27 @@ const SeoRaiwindRoad = lazy(() => import("./pages/lahore/SeoRaiwindRoad"));
 const SeoMughalPura = lazy(() => import("./pages/lahore/SeoMughalPura"));
 const SeoShahdara = lazy(() => import("./pages/lahore/SeoShahdara"));
 const SeoAnarkali = lazy(() => import("./pages/lahore/SeoAnarkali"));
+const SeoBlueArea = lazy(() => import("./pages/islamabad/SeoBlueArea"));
+const SeoF6Isb = lazy(() => import("./pages/islamabad/SeoF6"));
+const SeoF7Isb = lazy(() => import("./pages/islamabad/SeoF7"));
+const SeoF8Isb = lazy(() => import("./pages/islamabad/SeoF8"));
+const SeoF10Isb = lazy(() => import("./pages/islamabad/SeoF10"));
+const SeoF11Isb = lazy(() => import("./pages/islamabad/SeoF11"));
+const SeoG9Isb = lazy(() => import("./pages/islamabad/SeoG9"));
+const SeoG10Isb = lazy(() => import("./pages/islamabad/SeoG10"));
+const SeoG11Isb = lazy(() => import("./pages/islamabad/SeoG11"));
+const SeoG13Isb = lazy(() => import("./pages/islamabad/SeoG13"));
+const SeoI8Isb = lazy(() => import("./pages/islamabad/SeoI8"));
+const SeoI9Isb = lazy(() => import("./pages/islamabad/SeoI9"));
+const SeoI10Isb = lazy(() => import("./pages/islamabad/SeoI10"));
+const SeoE11Isb = lazy(() => import("./pages/islamabad/SeoE11"));
+const SeoDhaIsb = lazy(() => import("./pages/islamabad/SeoDhaIslamabad"));
+const SeoBahriaTownIsb = lazy(() => import("./pages/islamabad/SeoBahriaTownIsb"));
+const SeoPwdHousing = lazy(() => import("./pages/islamabad/SeoPwdHousing"));
+const SeoCbrTown = lazy(() => import("./pages/islamabad/SeoCbrTown"));
+const SeoGulbergGreens = lazy(() => import("./pages/islamabad/SeoGulbergGreens"));
+const SeoH13Isb = lazy(() => import("./pages/islamabad/SeoH13"));
+const SeoD12Isb = lazy(() => import("./pages/islamabad/SeoD12"));
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -252,6 +273,27 @@ const App = () => (
             <Route path="/seo-agency-lahore/mughal-pura" element={<SeoMughalPura />} />
             <Route path="/seo-agency-lahore/shahdara" element={<SeoShahdara />} />
             <Route path="/seo-agency-lahore/anarkali" element={<SeoAnarkali />} />
+            <Route path="/seo-agency-islamabad/blue-area" element={<SeoBlueArea />} />
+            <Route path="/seo-agency-islamabad/f-6" element={<SeoF6Isb />} />
+            <Route path="/seo-agency-islamabad/f-7" element={<SeoF7Isb />} />
+            <Route path="/seo-agency-islamabad/f-8" element={<SeoF8Isb />} />
+            <Route path="/seo-agency-islamabad/f-10" element={<SeoF10Isb />} />
+            <Route path="/seo-agency-islamabad/f-11" element={<SeoF11Isb />} />
+            <Route path="/seo-agency-islamabad/g-9" element={<SeoG9Isb />} />
+            <Route path="/seo-agency-islamabad/g-10" element={<SeoG10Isb />} />
+            <Route path="/seo-agency-islamabad/g-11" element={<SeoG11Isb />} />
+            <Route path="/seo-agency-islamabad/g-13" element={<SeoG13Isb />} />
+            <Route path="/seo-agency-islamabad/i-8" element={<SeoI8Isb />} />
+            <Route path="/seo-agency-islamabad/i-9" element={<SeoI9Isb />} />
+            <Route path="/seo-agency-islamabad/i-10" element={<SeoI10Isb />} />
+            <Route path="/seo-agency-islamabad/e-11" element={<SeoE11Isb />} />
+            <Route path="/seo-agency-islamabad/dha-islamabad" element={<SeoDhaIsb />} />
+            <Route path="/seo-agency-islamabad/bahria-town" element={<SeoBahriaTownIsb />} />
+            <Route path="/seo-agency-islamabad/pwd-housing" element={<SeoPwdHousing />} />
+            <Route path="/seo-agency-islamabad/cbr-town" element={<SeoCbrTown />} />
+            <Route path="/seo-agency-islamabad/gulberg-greens" element={<SeoGulbergGreens />} />
+            <Route path="/seo-agency-islamabad/h-13" element={<SeoH13Isb />} />
+            <Route path="/seo-agency-islamabad/d-12" element={<SeoD12Isb />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
