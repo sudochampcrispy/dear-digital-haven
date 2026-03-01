@@ -99,7 +99,31 @@ const BlockchainCompanySeo = lazy(() => import("./pages/BlockchainCompanySeo"));
 const EnterpriseItCompanySeo = lazy(() => import("./pages/EnterpriseItCompanySeo"));
 const ErpSolutionProviderSeo = lazy(() => import("./pages/ErpSolutionProviderSeo"));
 const CloudServicesCompanySeo = lazy(() => import("./pages/CloudServicesCompanySeo"));
-
+const SeoGulberg = lazy(() => import("./pages/lahore/SeoGulberg"));
+const SeoDhaLahore = lazy(() => import("./pages/lahore/SeoDhaLahore"));
+const SeoModelTownLhr = lazy(() => import("./pages/lahore/SeoModelTown"));
+const SeoJoharTown = lazy(() => import("./pages/lahore/SeoJoharTown"));
+const SeoBahriaTown = lazy(() => import("./pages/lahore/SeoBahriaTown"));
+const SeoGardenTown = lazy(() => import("./pages/lahore/SeoGardenTown"));
+const SeoFaisalTown = lazy(() => import("./pages/lahore/SeoFaisalTown"));
+const SeoIqbalTown = lazy(() => import("./pages/lahore/SeoIqbalTown"));
+const SeoTownship = lazy(() => import("./pages/lahore/SeoTownship"));
+const SeoWapdaTown = lazy(() => import("./pages/lahore/SeoWapdaTown"));
+const SeoValenciaTown = lazy(() => import("./pages/lahore/SeoValenciaTown"));
+const SeoCantt = lazy(() => import("./pages/lahore/SeoCantt"));
+const SeoShadman = lazy(() => import("./pages/lahore/SeoShadman"));
+const SeoCavalryGround = lazy(() => import("./pages/lahore/SeoCavalryGround"));
+const SeoMallRoad = lazy(() => import("./pages/lahore/SeoMallRoad"));
+const SeoSabzazar = lazy(() => import("./pages/lahore/SeoSabzazar"));
+const SeoSamanabad = lazy(() => import("./pages/lahore/SeoSamanabad"));
+const SeoIchhra = lazy(() => import("./pages/lahore/SeoIchhra"));
+const SeoAllamaIqbalTown = lazy(() => import("./pages/lahore/SeoAllamaIqbalTown"));
+const SeoLakeCity = lazy(() => import("./pages/lahore/SeoLakeCity"));
+const SeoAskari = lazy(() => import("./pages/lahore/SeoAskari"));
+const SeoRaiwindRoad = lazy(() => import("./pages/lahore/SeoRaiwindRoad"));
+const SeoMughalPura = lazy(() => import("./pages/lahore/SeoMughalPura"));
+const SeoShahdara = lazy(() => import("./pages/lahore/SeoShahdara"));
+const SeoAnarkali = lazy(() => import("./pages/lahore/SeoAnarkali"));
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -203,6 +227,31 @@ const App = () => (
             <Route path="/enterprise-it-company-seo" element={<EnterpriseItCompanySeo />} />
             <Route path="/erp-solution-provider-seo" element={<ErpSolutionProviderSeo />} />
             <Route path="/cloud-services-company-seo" element={<CloudServicesCompanySeo />} />
+            <Route path="/seo-agency-lahore/gulberg" element={<SeoGulberg />} />
+            <Route path="/seo-agency-lahore/dha-lahore" element={<SeoDhaLahore />} />
+            <Route path="/seo-agency-lahore/model-town" element={<SeoModelTownLhr />} />
+            <Route path="/seo-agency-lahore/johar-town" element={<SeoJoharTown />} />
+            <Route path="/seo-agency-lahore/bahria-town" element={<SeoBahriaTown />} />
+            <Route path="/seo-agency-lahore/garden-town" element={<SeoGardenTown />} />
+            <Route path="/seo-agency-lahore/faisal-town" element={<SeoFaisalTown />} />
+            <Route path="/seo-agency-lahore/iqbal-town" element={<SeoIqbalTown />} />
+            <Route path="/seo-agency-lahore/township" element={<SeoTownship />} />
+            <Route path="/seo-agency-lahore/wapda-town" element={<SeoWapdaTown />} />
+            <Route path="/seo-agency-lahore/valencia-town" element={<SeoValenciaTown />} />
+            <Route path="/seo-agency-lahore/cantt" element={<SeoCantt />} />
+            <Route path="/seo-agency-lahore/shadman" element={<SeoShadman />} />
+            <Route path="/seo-agency-lahore/cavalry-ground" element={<SeoCavalryGround />} />
+            <Route path="/seo-agency-lahore/mall-road" element={<SeoMallRoad />} />
+            <Route path="/seo-agency-lahore/sabzazar" element={<SeoSabzazar />} />
+            <Route path="/seo-agency-lahore/samanabad" element={<SeoSamanabad />} />
+            <Route path="/seo-agency-lahore/ichhra" element={<SeoIchhra />} />
+            <Route path="/seo-agency-lahore/allama-iqbal-town" element={<SeoAllamaIqbalTown />} />
+            <Route path="/seo-agency-lahore/lake-city" element={<SeoLakeCity />} />
+            <Route path="/seo-agency-lahore/askari" element={<SeoAskari />} />
+            <Route path="/seo-agency-lahore/raiwind-road" element={<SeoRaiwindRoad />} />
+            <Route path="/seo-agency-lahore/mughal-pura" element={<SeoMughalPura />} />
+            <Route path="/seo-agency-lahore/shahdara" element={<SeoShahdara />} />
+            <Route path="/seo-agency-lahore/anarkali" element={<SeoAnarkali />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
