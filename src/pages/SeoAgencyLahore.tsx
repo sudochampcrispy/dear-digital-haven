@@ -64,18 +64,31 @@ const industries = [
 ];
 
 const lahoreAreas = [
-  { name: "Gulberg & Liberty Market", desc: "Lahore's premier commercial district housing corporate offices, retail flagships, and Pakistan's most iconic shopping destination. Intense SEO competition across real estate, hospitality, and professional services." },
-  { name: "DHA Lahore (Phase 1-9)", desc: "Pakistan's most prestigious planned community spanning 9 phases with high-value residential and commercial properties. Premium healthcare, education, and luxury service businesses compete heavily for organic visibility." },
-  { name: "Model Town", desc: "Established, affluent neighborhood known for its tree-lined streets, universities, and medical facilities. Growing digital adoption among local businesses creates strong local SEO opportunities." },
-  { name: "Johar Town", desc: "Rapidly developing area anchored by UET and Expo Center, with new commercial plazas, hospitals, and educational institutions. The fastest-growing local search market in Lahore." },
-  { name: "Bahria Town Lahore", desc: "Pakistan's largest private housing society with a concentrated, affluent consumer base of 200,000+ residents. Captive audience creates unique local SEO dynamics for service businesses." },
-  { name: "Mall Road & Old Lahore", desc: "Historical commercial corridor stretching from Data Darbar to the Lahore Fort, with traditional businesses, bazaars, and heritage hospitality establishments transitioning to digital marketing." },
-  { name: "Cantt & Fortress Stadium", desc: "Military-adjacent commercial zone with upscale shopping, restaurants, and professional services. High-income demographics make this a premium local SEO target area." },
-  { name: "Iqbal Town & Township", desc: "Dense residential zones with strong demand for healthcare, education, and everyday services. High search volume for 'near me' queries across multiple service categories." },
-  { name: "Wapda Town & Valencia", desc: "Modern residential communities with growing commercial infrastructure, medical centers, and educational facilities driving increasing local search demand." },
-  { name: "Ferozepur Road & Thokar Niaz Baig", desc: "Lahore's industrial and transport corridor connecting to the motorway. Warehousing, logistics, and manufacturing businesses benefit from B2B search optimization." },
-  { name: "Garden Town & Faisal Town", desc: "Central residential neighborhoods with medical specialists, dental clinics, and professional service providers competing for high-intent local searches." },
-  { name: "Allama Iqbal International Airport Area", desc: "Commercial zone around Pakistan's second-busiest airport, with hotels, cargo services, and travel businesses requiring strong local and industry-specific SEO." },
+  { name: "Gulberg", link: "/seo-agency-lahore/gulberg" },
+  { name: "DHA Lahore", link: "/seo-agency-lahore/dha-lahore" },
+  { name: "Model Town", link: "/seo-agency-lahore/model-town" },
+  { name: "Johar Town", link: "/seo-agency-lahore/johar-town" },
+  { name: "Bahria Town", link: "/seo-agency-lahore/bahria-town" },
+  { name: "Garden Town", link: "/seo-agency-lahore/garden-town" },
+  { name: "Faisal Town", link: "/seo-agency-lahore/faisal-town" },
+  { name: "Iqbal Town", link: "/seo-agency-lahore/iqbal-town" },
+  { name: "Township", link: "/seo-agency-lahore/township" },
+  { name: "Wapda Town", link: "/seo-agency-lahore/wapda-town" },
+  { name: "Valencia Town", link: "/seo-agency-lahore/valencia-town" },
+  { name: "Cantt", link: "/seo-agency-lahore/cantt" },
+  { name: "Shadman", link: "/seo-agency-lahore/shadman" },
+  { name: "Cavalry Ground", link: "/seo-agency-lahore/cavalry-ground" },
+  { name: "Mall Road", link: "/seo-agency-lahore/mall-road" },
+  { name: "Sabzazar", link: "/seo-agency-lahore/sabzazar" },
+  { name: "Samanabad", link: "/seo-agency-lahore/samanabad" },
+  { name: "Ichhra", link: "/seo-agency-lahore/ichhra" },
+  { name: "Allama Iqbal Town", link: "/seo-agency-lahore/allama-iqbal-town" },
+  { name: "Lake City", link: "/seo-agency-lahore/lake-city" },
+  { name: "Askari", link: "/seo-agency-lahore/askari" },
+  { name: "Raiwind Road", link: "/seo-agency-lahore/raiwind-road" },
+  { name: "Mughal Pura", link: "/seo-agency-lahore/mughal-pura" },
+  { name: "Shahdara", link: "/seo-agency-lahore/shahdara" },
+  { name: "Anarkali", link: "/seo-agency-lahore/anarkali" },
 ];
 
 const tools = ["Ahrefs", "SEMrush", "Screaming Frog", "Google Search Console", "Google Analytics 4", "Surfer SEO", "ProSEOToolkit.com", "PageSpeed Insights", "Schema Markup Validator", "GTmetrix", "Google Trends"];
@@ -170,15 +183,20 @@ const SeoAgencyLahore = () => (
       </section>
 
       {/* Lahore Areas */}
-      <section className="section-padding surface-sunken" aria-label="Lahore areas we optimize for">
+      <section className="section-padding surface-sunken" aria-label="Local SEO services across Lahore">
         <div className="section-container">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Hyperlocal SEO Across Lahore</h2>
-            <p className="text-body mb-4">Search behavior varies dramatically across Lahore's diverse neighborhoods. Our <Link to="/keyword-research" className="text-primary hover:underline">keyword research</Link> maps demand at the area level, while our <Link to="/local-seo-karachi" className="text-primary hover:underline">local SEO strategies</Link> build neighborhood-aware campaigns.</p>
-            <p className="text-body">From DHA's premium service market to Anarkali's wholesale ecosystem, every area gets a tailored approach based on actual search data and competitive analysis.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Local SEO Services Across Lahore</h2>
+            <p className="text-body mb-4">Lahore's neighborhoods each carry distinct commercial identities, search patterns, and buyer intent. Our local SEO campaigns target individual localities with dedicated landing pages, area-specific <Link to="/keyword-research" className="text-primary hover:underline">keyword research</Link>, and geo-targeted <Link to="/content-strategy-seo" className="text-primary hover:underline">content strategies</Link> that capture "near me" and neighborhood-specific search queries across all of Lahore's commercial zones.</p>
+            <p className="text-body">From DHA's premium service market to Anarkali's wholesale bazaars, each area receives a tailored SEO approach built on real search demand data and competitive analysis — ensuring your business dominates the local search results that matter most.</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {lahoreAreas.map((area) => (<div key={area.name} className="metric-card"><div className="flex items-center gap-2 mb-2"><MapPin className="h-4 w-4 text-primary shrink-0" /><h3 className="font-semibold text-heading">{area.name}</h3></div><p className="text-sm text-body">{area.desc}</p></div>))}
+          <div className="flex flex-wrap justify-center gap-3">
+            {lahoreAreas.map((area) => (
+              <Link key={area.name} to={area.link} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading hover:text-primary transition-colors">
+                <MapPin className="h-3.5 w-3.5 text-primary mr-2" />
+                {area.name}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
