@@ -59,8 +59,17 @@ const industries = [
   { title: "Education & EdTech", desc: "Enrollment-driven SEO for Islamabad's elite schools, universities (NUST, COMSATS, IIUI), and the growing EdTech startup ecosystem.", link: "/seo-services" },
   { title: "Law Firms & Legal Services", desc: "Corporate law firms, intellectual property attorneys, and legal consultants in Blue Area and F-6 need practice-area SEO and professional authority building.", link: "/law-firm-seo" },
   { title: "Diplomatic & NGO Sector", desc: "International organizations, embassies, and NGOs headquartered in Islamabad need multilingual SEO and global visibility strategies.", link: "/international-seo" },
-  { title: "Construction & Architecture", desc: "Islamabad's construction boom — new sectors, housing societies, and commercial projects — creates massive demand for contractor and architectural firm SEO.", link: "/seo-services" },
+  { title: "Construction & Architecture", desc: "Islamabad's construction boom — new sectors, housing societies, and commercial projects — creates massive demand for contractor and architectural firm SEO.", link: "/construction-company-seo" },
   { title: "Restaurants & Fine Dining", desc: "Islamabad's growing food scene in F-7 Markaz, F-6, and Saidpur Village demands Google Business Profile optimization, review management, and local pack strategies.", link: "/restaurant-seo" },
+  { title: "Cybersecurity & Cloud Services", desc: "Authority-driven SEO for Islamabad's cybersecurity firms and cloud service providers targeting government contracts, enterprise clients, and B2B decision-makers.", link: "/cybersecurity-company-seo" },
+  { title: "Fintech & Digital Banking", desc: "Product-led SEO strategies for Islamabad's fintech startups, mobile wallet providers, and digital banking platforms competing in Pakistan's rapidly evolving financial technology sector.", link: "/fintech-company-seo" },
+  { title: "Accounting & Financial Advisory", desc: "Service page optimization, trust signals, and local SEO for chartered accountancy firms and financial advisory practices serving Islamabad's corporate clientele.", link: "/accounting-firm-seo" },
+  { title: "Logistics & Supply Chain", desc: "B2B keyword targeting, route-based content, and service area SEO for logistics companies and freight forwarders operating along Islamabad's GT Road and M-2 Motorway corridor.", link: "/logistics-company-seo" },
+  { title: "E-commerce & Online Retail", desc: "Product page SEO, category architecture, and structured data for Islamabad-based online stores and D2C brands targeting Pakistan's growing e-commerce market.", link: "/ecommerce-seo" },
+  { title: "Tourism & Hospitality", desc: "Destination SEO, hotel and guest house optimization, and experience-based content for Islamabad's Margalla Hills tourism, Saidpur Village, and Faisal Mosque visitor attractions.", link: "/seo-services" },
+  { title: "AI & Blockchain Companies", desc: "Technical content marketing, product documentation SEO, and thought leadership strategies for Islamabad's emerging AI startups and blockchain technology firms.", link: "/ai-company-seo" },
+  { title: "Telecom & ISP Providers", desc: "Service area targeting, plan comparison content, and local SEO for telecom companies and internet service providers serving Islamabad's tech-savvy population.", link: "/seo-services" },
+  { title: "Gym & Wellness Centers", desc: "Local pack dominance, membership-driven content, and 'near me' optimization for gyms, spas, and wellness studios across Islamabad's residential sectors.", link: "/seo-services" },
 ];
 
 const islamabadAreas = [
