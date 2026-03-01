@@ -61,6 +61,15 @@ const industries = [
   { title: "Manufacturing & Textiles", desc: "B2B keyword targeting, product specification pages, and international SEO for Lahore's garment and textile manufacturing sector.", link: "/manufacturing-seo" },
   { title: "Restaurants & Hospitality", desc: "Google Business Profile optimization, menu schema, and local pack strategies for Lahore's famous food scene on MM Alam Road and Food Street.", link: "/restaurant-seo" },
   { title: "Accounting & Finance", desc: "Service page optimization, trust signals, and local SEO for accounting firms and financial advisory practices.", link: "/accounting-firm-seo" },
+  { title: "Construction & Contracting", desc: "Project portfolio SEO, contractor directory optimization, and lead generation strategies for Lahore's rapidly expanding construction and housing development sector.", link: "/construction-company-seo" },
+  { title: "Logistics & Freight", desc: "B2B visibility, route-based keyword targeting, and service area SEO for logistics companies operating across Lahore's GT Road industrial corridor.", link: "/logistics-company-seo" },
+  { title: "Fintech & Digital Payments", desc: "SaaS SEO, product-led content, and authority building for Lahore's emerging fintech startups and mobile banking service providers.", link: "/fintech-company-seo" },
+  { title: "Architecture & Interior Design", desc: "Portfolio SEO, project gallery optimization, and local search visibility for Lahore's architecture firms and interior design studios.", link: "/architecture-firm-seo" },
+  { title: "Export & Trading Companies", desc: "International keyword targeting, multilingual optimization, and B2B lead generation for Lahore-based export houses serving global buyers.", link: "/export-company-seo" },
+  { title: "Cybersecurity & IT Services", desc: "Technical content marketing, enterprise keyword strategies, and B2B authority building for Lahore's growing cybersecurity and managed IT service providers.", link: "/cybersecurity-company-seo" },
+  { title: "Automotive & Dealerships", desc: "Vehicle listing SEO, dealership Google Business Profile optimization, and local search strategies for Lahore's auto market along Multan Road and Canal Bank.", link: "/seo-services" },
+  { title: "Wedding & Event Services", desc: "Seasonal keyword targeting, portfolio gallery optimization, and local SEO for Lahore's wedding planners, venues, and event management companies.", link: "/seo-services" },
+  { title: "Gym & Fitness Centers", desc: "Local pack dominance, membership-driven content strategies, and 'near me' optimization for gyms and fitness studios across Lahore's residential areas.", link: "/seo-services" },
 ];
 
 const lahoreAreas = [

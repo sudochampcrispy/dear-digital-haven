@@ -64,18 +64,27 @@ const industries = [
 ];
 
 const islamabadAreas = [
-  { name: "Blue Area & Jinnah Avenue", desc: "Islamabad's central business district and corporate heart. Home to banks, corporate headquarters, and professional service firms competing for high-value B2B and corporate clients through organic search." },
-  { name: "F-6 & F-7 (Super Market & Jinnah Super)", desc: "Premium commercial sectors with upscale retail, restaurants, law firms, and medical specialists. High search volume for professional services and fine dining keywords." },
-  { name: "F-8 & F-10", desc: "Mixed residential-commercial sectors with the F-8 Markaz medical hub, educational institutions, and growing retail presence. Strong 'near me' search demand for healthcare and education." },
-  { name: "DHA Islamabad (Phase 1-5)", desc: "Islamabad's most exclusive planned community with premium residential and commercial zones. Real estate, healthcare, and luxury service businesses compete for this affluent audience online." },
-  { name: "Bahria Town Islamabad", desc: "Pakistan's second-largest private housing society with 300,000+ residents creating a captive market. Local businesses need area-specific SEO to reach this concentrated consumer base." },
-  { name: "I-8 & I-9 (IT Hub)", desc: "Islamabad's technology corridor with software houses, IT companies, and the NSTP incubator. Tech companies need SaaS SEO, product-led content, and B2B visibility strategies." },
-  { name: "I-10 & I-14", desc: "Growing industrial and commercial zones with manufacturing units, warehouses, and emerging tech businesses. B2B keyword targeting and local directory presence are critical." },
-  { name: "G-Sectors (G-9, G-10, G-11, G-13)", desc: "Dense residential-commercial zones with diverse local businesses — restaurants, clinics, tutoring centers, and retail shops. High volume of localized 'near me' and service-specific queries." },
-  { name: "E-11 & Margalla Hills Area", desc: "Upscale residential zone near Margalla Hills with premium hospitality (Monal, Serena), real estate, and tourism businesses requiring destination and luxury service SEO." },
-  { name: "Rawat & Kahuta Road", desc: "Developing suburban corridor between Islamabad and Rawalpindi with new housing societies, industrial zones, and service businesses targeting the twin-city metro audience." },
-  { name: "PWD & CBR Town", desc: "Affordable housing schemes with growing commercial infrastructure and increasing local search adoption. Service businesses benefit from early-mover SEO advantage." },
-  { name: "Capital Smart City & Park View", desc: "New mega-development projects requiring real estate SEO, developer branding, and property listing optimization to attract investors and buyers from across Pakistan." },
+  { name: "Blue Area", link: "/seo-agency-islamabad/blue-area" },
+  { name: "F-6 Markaz", link: "/seo-agency-islamabad/f-6" },
+  { name: "F-7 Markaz", link: "/seo-agency-islamabad/f-7" },
+  { name: "F-8", link: "/seo-agency-islamabad/f-8" },
+  { name: "F-10", link: "/seo-agency-islamabad/f-10" },
+  { name: "F-11", link: "/seo-agency-islamabad/f-11" },
+  { name: "G-9", link: "/seo-agency-islamabad/g-9" },
+  { name: "G-10", link: "/seo-agency-islamabad/g-10" },
+  { name: "G-11", link: "/seo-agency-islamabad/g-11" },
+  { name: "G-13", link: "/seo-agency-islamabad/g-13" },
+  { name: "I-8", link: "/seo-agency-islamabad/i-8" },
+  { name: "I-9", link: "/seo-agency-islamabad/i-9" },
+  { name: "I-10", link: "/seo-agency-islamabad/i-10" },
+  { name: "E-11", link: "/seo-agency-islamabad/e-11" },
+  { name: "DHA Islamabad", link: "/seo-agency-islamabad/dha-islamabad" },
+  { name: "Bahria Town", link: "/seo-agency-islamabad/bahria-town" },
+  { name: "PWD Housing", link: "/seo-agency-islamabad/pwd-housing" },
+  { name: "CBR Town", link: "/seo-agency-islamabad/cbr-town" },
+  { name: "Gulberg Greens", link: "/seo-agency-islamabad/gulberg-greens" },
+  { name: "H-13", link: "/seo-agency-islamabad/h-13" },
+  { name: "D-12", link: "/seo-agency-islamabad/d-12" },
 ];
 
 const tools = ["Ahrefs", "SEMrush", "Screaming Frog", "Google Search Console", "Google Analytics 4", "Surfer SEO", "ProSEOToolkit.com", "PageSpeed Insights", "Schema Markup Validator", "GTmetrix", "Google Trends"];
@@ -143,13 +152,21 @@ const SeoAgencyIslamabad = () => (
         </div>
       </section>
 
-      <section className="section-padding surface-sunken" aria-label="Islamabad areas">
+      <section className="section-padding surface-sunken" aria-label="Local SEO services across Islamabad">
         <div className="section-container">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Hyperlocal SEO Across Islamabad</h2>
-            <p className="text-body mb-4">Each Islamabad sector has distinct commercial characteristics and search patterns. Our <Link to="/local-seo-karachi" className="text-primary hover:underline">local SEO strategies</Link> are built on granular area-level <Link to="/keyword-research" className="text-primary hover:underline">keyword research</Link>.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Local SEO Services Across Islamabad</h2>
+            <p className="text-body mb-4">Islamabad's sectors each carry distinct commercial identities, search patterns, and buyer intent. Our local SEO campaigns target individual localities with dedicated landing pages, area-specific <Link to="/keyword-research" className="text-primary hover:underline">keyword research</Link>, and geo-targeted <Link to="/content-strategy-seo" className="text-primary hover:underline">content strategies</Link> that capture sector-specific search queries across all of Islamabad's commercial zones.</p>
+            <p className="text-body">From Blue Area's corporate corridors to Bahria Town's residential community, each area receives a tailored SEO approach built on real search demand data and competitive analysis — ensuring your business dominates the local search results that matter most.</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">{islamabadAreas.map((area) => (<div key={area.name} className="metric-card"><div className="flex items-center gap-2 mb-2"><MapPin className="h-4 w-4 text-primary shrink-0" /><h3 className="font-semibold text-heading">{area.name}</h3></div><p className="text-sm text-body">{area.desc}</p></div>))}</div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {islamabadAreas.map((area) => (
+              <Link key={area.name} to={area.link} className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-heading hover:text-primary transition-colors">
+                <MapPin className="h-3.5 w-3.5 text-primary mr-2" />
+                {area.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
