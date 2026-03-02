@@ -4,7 +4,7 @@ import SeoHead from "@/components/SeoHead";
 import JsonLd, { personSchema, organizationSchema, websiteSchema, siteNavigationSchema, buildBreadcrumb, buildWebPage } from "@/components/JsonLd";
 import CtaBanner from "@/components/CtaBanner";
 import LeadGenForm from "@/components/LeadGenForm";
-import { ArrowRight, BarChart3, Search, Globe, Zap, ShieldCheck, TrendingUp, CheckCircle2, MapPin, Wrench, Users, FileSearch, Layers, Target, BookOpen } from "lucide-react";
+import { ArrowRight, BarChart3, Search, Globe, Zap, ShieldCheck, TrendingUp, CheckCircle2, MapPin, Wrench, Users, FileSearch, Layers, Target } from "lucide-react";
 
 const stats = [
   { value: "300%+", label: "Avg. Organic Traffic Growth" },
@@ -77,9 +77,12 @@ const testimonials = [
 ];
 
 const blogPosts = [
-  { title: "How to Hire the Best SEO Agency in Karachi — 2026 Guide", link: "/blog/how-to-hire-best-seo-agency-karachi", desc: "A comprehensive checklist for evaluating SEO agencies in Pakistan, including red flags, pricing benchmarks, and what to expect from a professional SEO engagement." },
-  { title: "5 Types of Websites Google's AI Overview Ignores", link: "/blog/websites-ai-overview-ignores", desc: "Discover which website patterns fail to appear in Google's AI-generated overviews and how to restructure your content for next-generation search visibility." },
-  { title: "How Local SEO Changed With AI Search", link: "/blog/local-seo-changed-ai-search", desc: "The intersection of local search optimization and AI-powered results — what Karachi businesses need to know to stay visible in 2026." },
+  { title: "Dark SEO Funnel: Why Traffic No Longer Proves Success", link: "/blog/dark-seo-funnel-explained", desc: "The customer journey now starts inside AI — invisible to analytics. Learn the 3-stage dark funnel, the 5 metrics replacing traffic, and why revenue stays stable when clicks drop.", category: "AI & SEO Strategy", date: "Mar 2, 2026", readTime: "11 min" },
+  { title: "Entity SEO: Why AI Values Entities Over Keywords", link: "/blog/entity-seo-explained", desc: "AI search engines rank entities, not keywords. Discover the 3 pillars of entity SEO and the 6 trust signals AI uses for verification.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "10 min" },
+  { title: "Secret Traffic Source: Being Cited by AI Without Clicks", link: "/blog/ai-citation-traffic-source", desc: "AI citations deliver brand visibility without clicks. Learn how to build entity signals and optimize for AI extractability.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "9 min" },
+  { title: "2026 Blog Ranking Guide: Topic Research & Semantic Writing", link: "/blog/blog-ranking-guide-2026", desc: "A 3-phase framework covering validated topic research, structured content planning, and semantic writing that produces 2x deeper content.", category: "Content Strategy", date: "Feb 22, 2026", readTime: "15 min" },
+  { title: "How Local SEO Changed Because of AI Search", link: "/blog/local-seo-changed-ai-search", desc: "AI summarizes local queries above the traditional local pack. Learn how to optimize reviews and entity signals for AI visibility.", category: "Local SEO", date: "Feb 22, 2026", readTime: "8 min" },
+  { title: "5 Types of Websites AI Overview Deliberately Ignores", link: "/blog/websites-ai-overview-ignores", desc: "Your website ranks on page 1 yet AI never cites it. These 5 website types fail AI's trust evaluation every time.", category: "AI & SEO", date: "Feb 22, 2026", readTime: "8 min" },
 ];
 
 const faqData = [
@@ -515,33 +518,57 @@ const Index = () => (
         </div>
       </section>
 
-      {/* Blog Teaser */}
+      {/* Blog & Insights */}
       <section className="section-padding surface-sunken" aria-label="Latest SEO insights">
         <div className="section-container">
-          <div className="text-center max-w-4xl mx-auto mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Latest SEO Insights & Resources</h2>
-            <p className="text-body">
-              Stay ahead of the curve with actionable SEO guides, algorithm update analyses, and proven strategies from my work with businesses across Pakistan and international markets.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
-              <Link key={post.link} to={post.link} className="metric-card group">
-                <BookOpen className="h-6 w-6 text-primary mb-3" />
-                <h3 className="font-semibold text-heading mb-2 group-hover:text-primary transition-colors text-sm">
-                  {post.title}
-                </h3>
-                <p className="text-sm text-body">{post.desc}</p>
-              </Link>
-            ))}
-          </div>
-          <div className="mt-8 text-center">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-2">From the Blog</p>
+              <h2 className="text-3xl sm:text-4xl font-bold">Latest SEO Insights & Strategies</h2>
+              <p className="text-body mt-3 max-w-2xl">
+                Actionable guides on AI search optimization, entity SEO, and semantic content strategies — everything you need to stay ahead in 2026.
+              </p>
+            </div>
             <Link
               to="/blog"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-heading hover:text-primary hover:border-primary/40 transition-colors shrink-0"
             >
               View All Articles <ArrowRight className="h-4 w-4" />
             </Link>
+          </div>
+
+          {/* Featured Post */}
+          <Link to={blogPosts[0].link} className="block metric-card group mb-8 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-1 h-full bg-primary rounded-l-lg" />
+            <div className="pl-5">
+              <div className="flex flex-wrap items-center gap-3 mb-3">
+                <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{blogPosts[0].category}</span>
+                <span className="text-xs text-subtle">{blogPosts[0].date}</span>
+                <span className="text-xs text-subtle">·</span>
+                <span className="text-xs text-subtle">{blogPosts[0].readTime}</span>
+                <span className="inline-block rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold text-accent-foreground uppercase tracking-wider">Latest</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-heading group-hover:text-primary transition-colors mb-3">{blogPosts[0].title}</h3>
+              <p className="text-body max-w-3xl">{blogPosts[0].desc}</p>
+              <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">Read Full Article <ArrowRight className="h-4 w-4" /></span>
+            </div>
+          </Link>
+
+          {/* Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {blogPosts.slice(1).map((post) => (
+              <Link key={post.link} to={post.link} className="metric-card group flex flex-col h-full">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-semibold text-primary">{post.category}</span>
+                  <span className="text-xs text-subtle">{post.readTime}</span>
+                </div>
+                <h3 className="font-bold text-heading mb-2 group-hover:text-primary transition-colors text-sm leading-snug flex-grow">
+                  {post.title}
+                </h3>
+                <p className="text-xs text-body mb-3 line-clamp-3">{post.desc}</p>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary mt-auto">Read Article <ArrowRight className="h-3.5 w-3.5" /></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
