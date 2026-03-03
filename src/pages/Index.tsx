@@ -4,7 +4,7 @@ import SeoHead from "@/components/SeoHead";
 import JsonLd, { personSchema, organizationSchema, websiteSchema, siteNavigationSchema, buildBreadcrumb, buildWebPage } from "@/components/JsonLd";
 import CtaBanner from "@/components/CtaBanner";
 import LeadGenForm from "@/components/LeadGenForm";
-import { ArrowRight, BarChart3, Search, Globe, Zap, ShieldCheck, TrendingUp, CheckCircle2, MapPin, Wrench, Users, FileSearch, Layers, Target } from "lucide-react";
+import { ArrowRight, BarChart3, Search, Globe, Zap, ShieldCheck, TrendingUp, CheckCircle2, MapPin, Wrench, Users, FileSearch, Layers, Target, Play } from "lucide-react";
 
 const stats = [
   { value: "300%+", label: "Avg. Organic Traffic Growth" },
@@ -77,11 +77,11 @@ const testimonials = [
 ];
 
 const blogPosts = [
-  { title: "Dark SEO Funnel: Why Traffic No Longer Proves Success", link: "/blog/dark-seo-funnel-explained", desc: "The customer journey now starts inside AI — invisible to analytics. Learn the 3-stage dark funnel, the 5 metrics replacing traffic, and why revenue stays stable when clicks drop.", category: "AI & SEO Strategy", date: "Mar 2, 2026", readTime: "11 min" },
-  { title: "Entity SEO: Why AI Values Entities Over Keywords", link: "/blog/entity-seo-explained", desc: "AI search engines rank entities, not keywords. Discover the 3 pillars of entity SEO and the 6 trust signals AI uses for verification.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "10 min" },
-  { title: "Secret Traffic Source: Being Cited by AI Without Clicks", link: "/blog/ai-citation-traffic-source", desc: "AI citations deliver brand visibility without clicks. Learn how to build entity signals and optimize for AI extractability.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "9 min" },
-  { title: "2026 Blog Ranking Guide: Topic Research & Semantic Writing", link: "/blog/blog-ranking-guide-2026", desc: "A 3-phase framework covering validated topic research, structured content planning, and semantic writing that produces 2x deeper content.", category: "Content Strategy", date: "Feb 22, 2026", readTime: "15 min" },
-  { title: "How Local SEO Changed Because of AI Search", link: "/blog/local-seo-changed-ai-search", desc: "AI summarizes local queries above the traditional local pack. Learn how to optimize reviews and entity signals for AI visibility.", category: "Local SEO", date: "Feb 22, 2026", readTime: "8 min" },
+  { title: "Dark SEO Funnel: Why Traffic No Longer Proves Success", link: "/blog/dark-seo-funnel-explained", desc: "The customer journey now starts inside AI — invisible to analytics. Learn the 3-stage dark funnel, the 5 metrics replacing traffic, and why revenue stays stable when clicks drop.", category: "AI & SEO Strategy", date: "Mar 2, 2026", readTime: "11 min", videoId: "gGcxJ5AZbPs" },
+  { title: "Entity SEO: Why AI Values Entities Over Keywords", link: "/blog/entity-seo-explained", desc: "AI search engines rank entities, not keywords. Discover the 3 pillars of entity SEO and the 6 trust signals AI uses for verification.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "10 min", videoId: "12mTj5VkSvM" },
+  { title: "Secret Traffic Source: Being Cited by AI Without Clicks", link: "/blog/ai-citation-traffic-source", desc: "AI citations deliver brand visibility without clicks. Learn how to build entity signals and optimize for AI extractability.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "9 min", videoId: "0AH3gmqPhNU" },
+  { title: "2026 Blog Ranking Guide: Topic Research & Semantic Writing", link: "/blog/blog-ranking-guide-2026", desc: "A 3-phase framework covering validated topic research, structured content planning, and semantic writing that produces 2x deeper content.", category: "Content Strategy", date: "Feb 22, 2026", readTime: "15 min", videoId: "WtTyFaV-LpE" },
+  { title: "How Local SEO Changed Because of AI Search", link: "/blog/local-seo-changed-ai-search", desc: "AI summarizes local queries above the traditional local pack. Learn how to optimize reviews and entity signals for AI visibility.", category: "Local SEO", date: "Feb 22, 2026", readTime: "8 min", videoId: "2K072pEkNiw" },
   { title: "5 Types of Websites AI Overview Deliberately Ignores", link: "/blog/websites-ai-overview-ignores", desc: "Your website ranks on page 1 yet AI never cites it. These 5 website types fail AI's trust evaluation every time.", category: "AI & SEO", date: "Feb 22, 2026", readTime: "8 min" },
 ];
 
@@ -518,15 +518,15 @@ const Index = () => (
         </div>
       </section>
 
-      {/* Blog & Insights */}
-      <section className="section-padding surface-sunken" aria-label="Latest SEO insights">
+      {/* Insights & Videos Hub */}
+      <section className="section-padding surface-sunken" aria-label="SEO insights, videos, and strategies">
         <div className="section-container">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
             <div>
-              <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-2">From the Blog</p>
-              <h2 className="text-3xl sm:text-4xl font-bold">Latest SEO Insights & Strategies</h2>
+              <p className="text-sm font-semibold text-primary tracking-wide uppercase mb-2">Insights & Videos</p>
+              <h2 className="text-3xl sm:text-4xl font-bold">SEO Strategies — Articles & Video Breakdowns</h2>
               <p className="text-body mt-3 max-w-2xl">
-                Actionable guides on AI search optimization, entity SEO, and semantic content strategies — everything you need to stay ahead in 2026.
+                In-depth guides paired with video walkthroughs on AI search optimization, entity SEO, and semantic content strategies — bridging theory and execution for 2026.
               </p>
             </div>
             <Link
@@ -537,38 +537,94 @@ const Index = () => (
             </Link>
           </div>
 
-          {/* Featured Post */}
+          {/* Featured Post with Video Thumbnail */}
           <Link to={blogPosts[0].link} className="block metric-card group mb-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-primary rounded-l-lg" />
-            <div className="pl-5">
-              <div className="flex flex-wrap items-center gap-3 mb-3">
-                <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{blogPosts[0].category}</span>
-                <span className="text-xs text-subtle">{blogPosts[0].date}</span>
-                <span className="text-xs text-subtle">·</span>
-                <span className="text-xs text-subtle">{blogPosts[0].readTime}</span>
-                <span className="inline-block rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold text-accent-foreground uppercase tracking-wider">Latest</span>
+            <div className="grid md:grid-cols-5 gap-6">
+              {blogPosts[0].videoId && (
+                <div className="md:col-span-2 relative rounded-lg overflow-hidden aspect-video bg-muted">
+                  <img
+                    src={`https://img.youtube.com/vi/${blogPosts[0].videoId}/hqdefault.jpg`}
+                    alt={blogPosts[0].title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-foreground/20 group-hover:bg-foreground/10 transition-colors">
+                    <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-lg">
+                      <Play className="h-6 w-6 text-primary-foreground fill-primary-foreground ml-0.5" />
+                    </div>
+                  </div>
+                </div>
+              )}
+              <div className={`${blogPosts[0].videoId ? "md:col-span-3" : "md:col-span-5"} pl-2 md:pl-4 flex flex-col justify-center`}>
+                <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{blogPosts[0].category}</span>
+                  {blogPosts[0].videoId && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 px-2.5 py-0.5 text-[10px] font-bold text-destructive uppercase tracking-wider">
+                      <Play className="h-2.5 w-2.5 fill-destructive" /> Video
+                    </span>
+                  )}
+                  <span className="text-xs text-subtle">{blogPosts[0].date}</span>
+                  <span className="text-xs text-subtle">·</span>
+                  <span className="text-xs text-subtle">{blogPosts[0].readTime}</span>
+                  <span className="inline-block rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold text-accent-foreground uppercase tracking-wider">Latest</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-heading group-hover:text-primary transition-colors mb-3">{blogPosts[0].title}</h3>
+                <p className="text-body max-w-3xl">{blogPosts[0].desc}</p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">Read Full Article & Watch Video <ArrowRight className="h-4 w-4" /></span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-heading group-hover:text-primary transition-colors mb-3">{blogPosts[0].title}</h3>
-              <p className="text-body max-w-3xl">{blogPosts[0].desc}</p>
-              <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">Read Full Article <ArrowRight className="h-4 w-4" /></span>
             </div>
           </Link>
 
-          {/* Grid */}
+          {/* Grid with Video Badges */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.slice(1).map((post) => (
               <Link key={post.link} to={post.link} className="metric-card group flex flex-col h-full">
+                {post.videoId && (
+                  <div className="relative rounded-md overflow-hidden aspect-video mb-3 bg-muted">
+                    <img
+                      src={`https://img.youtube.com/vi/${post.videoId}/mqdefault.jpg`}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-foreground/20 group-hover:bg-foreground/10 transition-colors">
+                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg">
+                        <Play className="h-4 w-4 text-primary-foreground fill-primary-foreground ml-0.5" />
+                      </div>
+                    </div>
+                  </div>
+                )}
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-semibold text-primary">{post.category}</span>
+                  {post.videoId && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 px-2 py-0.5 text-[10px] font-bold text-destructive uppercase tracking-wider">
+                      <Play className="h-2.5 w-2.5 fill-destructive" /> Video
+                    </span>
+                  )}
                   <span className="text-xs text-subtle">{post.readTime}</span>
                 </div>
                 <h3 className="font-bold text-heading mb-2 group-hover:text-primary transition-colors text-sm leading-snug flex-grow">
                   {post.title}
                 </h3>
                 <p className="text-xs text-body mb-3 line-clamp-3">{post.desc}</p>
-                <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary mt-auto">Read Article <ArrowRight className="h-3.5 w-3.5" /></span>
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary mt-auto">
+                  {post.videoId ? "Read & Watch" : "Read Article"} <ArrowRight className="h-3.5 w-3.5" />
+                </span>
               </Link>
             ))}
+          </div>
+
+          {/* YouTube Channel CTA */}
+          <div className="mt-8 text-center">
+            <a
+              href="https://www.youtube.com/@naveedganatra"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+            >
+              Subscribe on YouTube for Weekly SEO Videos <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </section>
