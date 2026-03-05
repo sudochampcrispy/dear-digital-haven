@@ -82,7 +82,7 @@ const blogPosts = [
   { title: "Secret Traffic Source: Being Cited by AI Without Clicks", link: "/blog/ai-citation-traffic-source", desc: "AI citations deliver brand visibility without clicks. Learn how to build entity signals and optimize for AI extractability.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "9 min", videoId: "0AH3gmqPhNU", videoType: "short" as const },
   { title: "2026 Blog Ranking Guide: Topic Research & Semantic Writing", link: "/blog/blog-ranking-guide-2026", desc: "A 3-phase framework covering validated topic research, structured content planning, and semantic writing that produces 2x deeper content.", category: "Content Strategy", date: "Feb 22, 2026", readTime: "15 min", videoId: "WtTyFaV-LpE", videoType: "long" as const },
   { title: "How Local SEO Changed Because of AI Search", link: "/blog/local-seo-changed-ai-search", desc: "AI summarizes local queries above the traditional local pack. Learn how to optimize reviews and entity signals for AI visibility.", category: "Local SEO", date: "Feb 22, 2026", readTime: "8 min", videoId: "2K072pEkNiw", videoType: "short" as const },
-  { title: "5 Types of Websites AI Overview Deliberately Ignores", link: "/blog/websites-ai-overview-ignores", desc: "Your website ranks on page 1 yet AI never cites it. These 5 website types fail AI's trust evaluation every time.", category: "AI & SEO", date: "Feb 22, 2026", readTime: "8 min" },
+  { title: "5 Types of Websites AI Overview Deliberately Ignores", link: "/blog/websites-ai-overview-ignores", desc: "Your website ranks on page 1 yet AI never cites it. These 5 website types fail AI's trust evaluation every time.", category: "AI & SEO", date: "Feb 22, 2026", readTime: "8 min", videoId: "HcwFRmD6sgw" },
 ];
 
 const faqData = [
