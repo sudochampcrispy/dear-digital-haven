@@ -587,31 +587,11 @@ const Index = () => (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.slice(1).map((post) => (
               <Link key={post.link} to={post.link} className="metric-card group flex flex-col h-full">
-                {post.videoId && post.videoType === "long" && (
-                  <div className="relative rounded-md overflow-hidden aspect-video mb-3 bg-muted">
-                    <img
-                      src={`https://img.youtube.com/vi/${post.videoId}/mqdefault.jpg`}
-                      alt={post.title}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center bg-foreground/20 group-hover:bg-foreground/10 transition-colors">
-                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                        <Play className="h-4 w-4 text-primary-foreground fill-primary-foreground ml-0.5" />
-                      </div>
-                    </div>
-                  </div>
-                )}
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-semibold text-primary">{post.category}</span>
-                  {post.videoId && post.videoType === "long" && (
+                  {post.videoId && (
                     <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 px-2 py-0.5 text-[10px] font-bold text-destructive uppercase tracking-wider">
                       <Play className="h-2.5 w-2.5 fill-destructive" /> Video
-                    </span>
-                  )}
-                  {post.videoId && post.videoType === "short" && (
-                    <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold text-accent-foreground uppercase tracking-wider">
-                      <Play className="h-2.5 w-2.5" /> YT Short
                     </span>
                   )}
                   <span className="text-xs text-subtle">{post.readTime}</span>
@@ -621,7 +601,7 @@ const Index = () => (
                 </h3>
                 <p className="text-xs text-body mb-3 line-clamp-3">{post.desc}</p>
                 <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary mt-auto">
-                  {post.videoType === "long" ? "Read & Watch" : post.videoId ? "Read & Watch Short" : "Read Article"} <ArrowRight className="h-3.5 w-3.5" />
+                  {post.videoId ? "Read & Watch" : "Read Article"} <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </Link>
             ))}
