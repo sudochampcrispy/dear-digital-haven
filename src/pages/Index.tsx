@@ -77,11 +77,11 @@ const testimonials = [
 ];
 
 const blogPosts = [
-  { title: "Dark SEO Funnel: Why Traffic No Longer Proves Success", link: "/blog/dark-seo-funnel-explained", desc: "The customer journey now starts inside AI — invisible to analytics. Learn the 3-stage dark funnel, the 5 metrics replacing traffic, and why revenue stays stable when clicks drop.", category: "AI & SEO Strategy", date: "Mar 2, 2026", readTime: "11 min", videoId: "gGcxJ5AZbPs" },
-  { title: "Entity SEO: Why AI Values Entities Over Keywords", link: "/blog/entity-seo-explained", desc: "AI search engines rank entities, not keywords. Discover the 3 pillars of entity SEO and the 6 trust signals AI uses for verification.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "10 min", videoId: "12mTj5VkSvM" },
-  { title: "Secret Traffic Source: Being Cited by AI Without Clicks", link: "/blog/ai-citation-traffic-source", desc: "AI citations deliver brand visibility without clicks. Learn how to build entity signals and optimize for AI extractability.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "9 min", videoId: "0AH3gmqPhNU" },
-  { title: "2026 Blog Ranking Guide: Topic Research & Semantic Writing", link: "/blog/blog-ranking-guide-2026", desc: "A 3-phase framework covering validated topic research, structured content planning, and semantic writing that produces 2x deeper content.", category: "Content Strategy", date: "Feb 22, 2026", readTime: "15 min", videoId: "WtTyFaV-LpE" },
-  { title: "How Local SEO Changed Because of AI Search", link: "/blog/local-seo-changed-ai-search", desc: "AI summarizes local queries above the traditional local pack. Learn how to optimize reviews and entity signals for AI visibility.", category: "Local SEO", date: "Feb 22, 2026", readTime: "8 min", videoId: "2K072pEkNiw" },
+  { title: "Dark SEO Funnel: Why Traffic No Longer Proves Success", link: "/blog/dark-seo-funnel-explained", desc: "The customer journey now starts inside AI — invisible to analytics. Learn the 3-stage dark funnel, the 5 metrics replacing traffic, and why revenue stays stable when clicks drop.", category: "AI & SEO Strategy", date: "Mar 2, 2026", readTime: "11 min", videoId: "gGcxJ5AZbPs", videoType: "long" as const },
+  { title: "Entity SEO: Why AI Values Entities Over Keywords", link: "/blog/entity-seo-explained", desc: "AI search engines rank entities, not keywords. Discover the 3 pillars of entity SEO and the 6 trust signals AI uses for verification.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "10 min", videoId: "12mTj5VkSvM", videoType: "short" as const },
+  { title: "Secret Traffic Source: Being Cited by AI Without Clicks", link: "/blog/ai-citation-traffic-source", desc: "AI citations deliver brand visibility without clicks. Learn how to build entity signals and optimize for AI extractability.", category: "AI & SEO", date: "Feb 26, 2026", readTime: "9 min", videoId: "0AH3gmqPhNU", videoType: "short" as const },
+  { title: "2026 Blog Ranking Guide: Topic Research & Semantic Writing", link: "/blog/blog-ranking-guide-2026", desc: "A 3-phase framework covering validated topic research, structured content planning, and semantic writing that produces 2x deeper content.", category: "Content Strategy", date: "Feb 22, 2026", readTime: "15 min", videoId: "WtTyFaV-LpE", videoType: "long" as const },
+  { title: "How Local SEO Changed Because of AI Search", link: "/blog/local-seo-changed-ai-search", desc: "AI summarizes local queries above the traditional local pack. Learn how to optimize reviews and entity signals for AI visibility.", category: "Local SEO", date: "Feb 22, 2026", readTime: "8 min", videoId: "2K072pEkNiw", videoType: "short" as const },
   { title: "5 Types of Websites AI Overview Deliberately Ignores", link: "/blog/websites-ai-overview-ignores", desc: "Your website ranks on page 1 yet AI never cites it. These 5 website types fail AI's trust evaluation every time.", category: "AI & SEO", date: "Feb 22, 2026", readTime: "8 min" },
 ];
 
@@ -541,7 +541,7 @@ const Index = () => (
           <Link to={blogPosts[0].link} className="block metric-card group mb-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-primary rounded-l-lg" />
             <div className="grid md:grid-cols-5 gap-6">
-              {blogPosts[0].videoId && (
+              {blogPosts[0].videoId && blogPosts[0].videoType === "long" && (
                 <div className="md:col-span-2 relative rounded-lg overflow-hidden aspect-video bg-muted">
                   <img
                     src={`https://img.youtube.com/vi/${blogPosts[0].videoId}/hqdefault.jpg`}
@@ -556,12 +556,17 @@ const Index = () => (
                   </div>
                 </div>
               )}
-              <div className={`${blogPosts[0].videoId ? "md:col-span-3" : "md:col-span-5"} pl-2 md:pl-4 flex flex-col justify-center`}>
+              <div className={`${blogPosts[0].videoId && blogPosts[0].videoType === "long" ? "md:col-span-3" : "md:col-span-5"} pl-2 md:pl-4 flex flex-col justify-center`}>
                 <div className="flex flex-wrap items-center gap-3 mb-3">
                   <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{blogPosts[0].category}</span>
-                  {blogPosts[0].videoId && (
+                  {blogPosts[0].videoId && blogPosts[0].videoType === "long" && (
                     <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 px-2.5 py-0.5 text-[10px] font-bold text-destructive uppercase tracking-wider">
                       <Play className="h-2.5 w-2.5 fill-destructive" /> Video
+                    </span>
+                  )}
+                  {blogPosts[0].videoId && blogPosts[0].videoType === "short" && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-bold text-accent-foreground uppercase tracking-wider">
+                      <Play className="h-2.5 w-2.5" /> YT Short
                     </span>
                   )}
                   <span className="text-xs text-subtle">{blogPosts[0].date}</span>
@@ -571,7 +576,9 @@ const Index = () => (
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-heading group-hover:text-primary transition-colors mb-3">{blogPosts[0].title}</h3>
                 <p className="text-body max-w-3xl">{blogPosts[0].desc}</p>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">Read Full Article & Watch Video <ArrowRight className="h-4 w-4" /></span>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
+                  {blogPosts[0].videoType === "long" ? "Read Full Article & Watch Video" : blogPosts[0].videoId ? "Read Article & Watch Short" : "Read Full Article"} <ArrowRight className="h-4 w-4" />
+                </span>
               </div>
             </div>
           </Link>
@@ -580,7 +587,7 @@ const Index = () => (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.slice(1).map((post) => (
               <Link key={post.link} to={post.link} className="metric-card group flex flex-col h-full">
-                {post.videoId && (
+                {post.videoId && post.videoType === "long" && (
                   <div className="relative rounded-md overflow-hidden aspect-video mb-3 bg-muted">
                     <img
                       src={`https://img.youtube.com/vi/${post.videoId}/mqdefault.jpg`}
@@ -597,9 +604,14 @@ const Index = () => (
                 )}
                 <div className="flex items-center gap-2 mb-3">
                   <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-semibold text-primary">{post.category}</span>
-                  {post.videoId && (
+                  {post.videoId && post.videoType === "long" && (
                     <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 px-2 py-0.5 text-[10px] font-bold text-destructive uppercase tracking-wider">
                       <Play className="h-2.5 w-2.5 fill-destructive" /> Video
+                    </span>
+                  )}
+                  {post.videoId && post.videoType === "short" && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold text-accent-foreground uppercase tracking-wider">
+                      <Play className="h-2.5 w-2.5" /> YT Short
                     </span>
                   )}
                   <span className="text-xs text-subtle">{post.readTime}</span>
@@ -609,7 +621,7 @@ const Index = () => (
                 </h3>
                 <p className="text-xs text-body mb-3 line-clamp-3">{post.desc}</p>
                 <span className="inline-flex items-center gap-1 text-xs font-semibold text-primary mt-auto">
-                  {post.videoId ? "Read & Watch" : "Read Article"} <ArrowRight className="h-3.5 w-3.5" />
+                  {post.videoType === "long" ? "Read & Watch" : post.videoId ? "Read & Watch Short" : "Read Article"} <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </Link>
             ))}
