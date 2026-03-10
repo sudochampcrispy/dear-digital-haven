@@ -174,6 +174,7 @@ const App = () => (
             <Route path="/blog/ai-citation-traffic-source" element={<BlogAICitationTraffic />} />
             <Route path="/blog/entity-seo-explained" element={<BlogEntitySeo />} />
             <Route path="/blog/dark-seo-funnel-explained" element={<BlogDarkSeoFunnel />} />
+            <Route path="/blog/google-search-console-ai-tool" element={<BlogGscAiTool />} />
             <Route path="/technical-seo" element={<TechnicalSeo />} />
             <Route path="/on-page-seo" element={<OnPageSeo />} />
             <Route path="/off-page-seo" element={<OffPageSeo />} />
