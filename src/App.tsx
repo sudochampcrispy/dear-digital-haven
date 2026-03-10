@@ -23,6 +23,7 @@ const BlogRankingGuide = lazy(() => import("./pages/BlogRankingGuide"));
 const BlogAICitationTraffic = lazy(() => import("./pages/BlogAICitationTraffic"));
 const BlogEntitySeo = lazy(() => import("./pages/BlogEntitySeo"));
 const BlogDarkSeoFunnel = lazy(() => import("./pages/BlogDarkSeoFunnel"));
+const BlogGscAiTool = lazy(() => import("./pages/BlogGscAiTool"));
 const TechnicalSeo = lazy(() => import("./pages/TechnicalSeo"));
 const OnPageSeo = lazy(() => import("./pages/OnPageSeo"));
 const OffPageSeo = lazy(() => import("./pages/OffPageSeo"));
