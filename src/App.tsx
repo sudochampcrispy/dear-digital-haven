@@ -24,6 +24,7 @@ const BlogAICitationTraffic = lazy(() => import("./pages/BlogAICitationTraffic")
 const BlogEntitySeo = lazy(() => import("./pages/BlogEntitySeo"));
 const BlogDarkSeoFunnel = lazy(() => import("./pages/BlogDarkSeoFunnel"));
 const BlogGscAiTool = lazy(() => import("./pages/BlogGscAiTool"));
+const BlogSaasSeoStrategy = lazy(() => import("./pages/BlogSaasSeoStrategy"));
 const TechnicalSeo = lazy(() => import("./pages/TechnicalSeo"));
 const OnPageSeo = lazy(() => import("./pages/OnPageSeo"));
 const OffPageSeo = lazy(() => import("./pages/OffPageSeo"));
@@ -175,6 +176,7 @@ const App = () => (
             <Route path="/blog/entity-seo-explained" element={<BlogEntitySeo />} />
             <Route path="/blog/dark-seo-funnel-explained" element={<BlogDarkSeoFunnel />} />
             <Route path="/blog/google-search-console-ai-tool" element={<BlogGscAiTool />} />
+            <Route path="/blog/saas-seo-strategy-ecommerce-ai-chatbot" element={<BlogSaasSeoStrategy />} />
             <Route path="/technical-seo" element={<TechnicalSeo />} />
             <Route path="/on-page-seo" element={<OnPageSeo />} />
             <Route path="/off-page-seo" element={<OffPageSeo />} />
